@@ -1,0 +1,52 @@
+{
+  "name": "ojtech",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.4.0",
+    "@prisma/adapter-pg": "^7.9.0",
+    "@prisma/client": "^7.9.0",
+    "@radix-ui/react-accordion": "^1.2.18",
+    "@radix-ui/react-dialog": "^1.1.21",
+    "@radix-ui/react-label": "^2.1.13",
+    "@radix-ui/react-navigation-menu": "^1.2.20",
+    "@radix-ui/react-select": "^2.3.5",
+    "@radix-ui/react-separator": "^1.1.13",
+    "@radix-ui/react-slot": "^1.3.1",
+    "@radix-ui/react-tabs": "^1.1.19",
+    "@react-email/components": "^1.0.12",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.26.0",
+    "motion": "^12.42.2",
+    "next": "16.2.11",
+    "pg": "^8.22.0",
+    "prisma": "^7.9.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.82.0",
+    "resend": "^6.18.0",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.11",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
