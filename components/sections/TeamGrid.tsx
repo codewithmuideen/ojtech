@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { UserRound } from "lucide-react";
 
@@ -15,6 +16,30 @@ const cardVariants: Variants = {
   rest: { y: 0 },
   hover: { y: -8, transition: { duration: 0.3, ease: [0.22, 1, 0.36, 1] } },
 };
+
+function Avatar({ member, size }: { member: TeamMember; size: number }) {
+  if (member.photo) {
+    return (
+      <Image
+        src={member.photo}
+        alt={member.name}
+        width={size}
+        height={size}
+        className="rounded-full object-cover ring-1 ring-inset ring-ink-900/10"
+        style={{ width: size, height: size }}
+      />
+    );
+  }
+
+  return (
+    <div
+      className="flex items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600 text-white"
+      style={{ width: size, height: size }}
+    >
+      <UserRound className="h-1/2 w-1/2" strokeWidth={1.5} />
+    </div>
+  );
+}
 
 function FounderCard({ member }: { member: TeamMember }) {
   const shouldReduceMotion = useReducedMotion();
@@ -33,8 +58,8 @@ function FounderCard({ member }: { member: TeamMember }) {
       />
 
       <div className="relative z-10">
-        <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600 text-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-white/15">
-          <UserRound className="h-11 w-11" strokeWidth={1.5} />
+        <div className="mx-auto w-fit overflow-hidden rounded-full transition-transform duration-300 group-hover:scale-110">
+          <Avatar member={member} size={96} />
         </div>
         <p className="mt-6 font-display text-xl font-semibold text-ink-900 transition-colors duration-300 group-hover:text-white">
           {member.name}
@@ -58,8 +83,8 @@ function TeamCard({ member }: { member: TeamMember }) {
       variants={revealItem}
       className="group rounded-2xl border border-ink-900/10 bg-white p-6 text-center transition-colors duration-300 hover:border-brand-500/40 hover:bg-mist-50"
     >
-      <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-ink-900/5 text-ink-700 transition-colors duration-300 group-hover:bg-brand-500/10 group-hover:text-brand-700">
-        <UserRound className="h-7 w-7" strokeWidth={1.5} />
+      <div className="mx-auto w-fit overflow-hidden rounded-full transition-transform duration-300 group-hover:scale-105">
+        <Avatar member={member} size={64} />
       </div>
       <p className="mt-4 font-display text-sm font-semibold text-ink-900">{member.name}</p>
       <p className="mt-1 text-xs text-ink-700">{member.role}</p>

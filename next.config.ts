@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: path.resolve(__dirname),
   },
+  images: {
+    // TODO(client): remove once real team headshots replace these
+    // placeholder portraits (see lib/data/team.ts).
+    remotePatterns: [
+      { protocol: "https", hostname: "randomuser.me", pathname: "/api/portraits/**" },
+    ],
+  },
   async headers() {
     return [
       {
