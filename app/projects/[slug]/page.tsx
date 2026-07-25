@@ -52,6 +52,9 @@ export default async function ProjectDetailPage({
               {project.isPlaceholder && (
                 <Badge variant="ink">Illustrative sample project</Badge>
               )}
+              {project.nameWithheld && (
+                <Badge variant="ink">Client name withheld by request</Badge>
+              )}
             </div>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-ink-900 sm:text-5xl">
               {project.name}

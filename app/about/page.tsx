@@ -6,6 +6,7 @@ import { companyTimeline } from "@/lib/data/timeline";
 import { team } from "@/lib/data/team";
 import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { PageHero } from "@/components/shared/PageHero";
+import { TeamGrid } from "@/components/sections/TeamGrid";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -113,16 +114,16 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-mist-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-5xl px-6 text-center lg:px-8">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <Reveal>
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand-700">
+            <p className="text-center font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand-700">
               Leadership
             </p>
-            <h2 className="mt-4 font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
+            <h2 className="mt-4 text-center font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
               Meet the Team
             </h2>
-            {team.length === 0 ? (
-              <p className="mx-auto mt-6 max-w-md text-ink-700">
+            {team.length === 0 && (
+              <p className="mx-auto mt-6 max-w-md text-center text-ink-700">
                 Team profiles are on their way. In the meantime, reach out
                 through our{" "}
                 <a href="/contact" className="text-brand-700 underline">
@@ -130,8 +131,10 @@ export default function AboutPage() {
                 </a>{" "}
                 to meet the people behind your project.
               </p>
-            ) : null}
+            )}
           </Reveal>
+
+          <TeamGrid />
         </div>
       </section>
     </>

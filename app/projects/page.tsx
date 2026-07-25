@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       <PageHero
         eyebrow="Projects"
         title="A closer look at what we build."
-        description="Illustrative examples of the kind of platforms and systems we design and build across industries. Named client work is added as engagements are completed and cleared for publication."
+        description="A mix of delivered client work (brand names withheld by request) and illustrative examples of the kind of platforms and systems we design and build across industries."
       />
 
       <div className="bg-white pb-24 sm:pb-32">
@@ -34,7 +34,12 @@ export default function ProjectsPage() {
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <Badge variant="brand">{project.industry}</Badge>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="brand">{project.industry}</Badge>
+                      {project.nameWithheld && (
+                        <Badge variant="ink">Name withheld</Badge>
+                      )}
+                    </div>
                     <h2 className="mt-4 font-display text-2xl font-semibold text-ink-900">
                       {project.name}
                     </h2>
