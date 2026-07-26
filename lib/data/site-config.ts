@@ -11,7 +11,7 @@ export const siteConfig = {
   // TODO(client): replace with verified production values before launch.
   url: "https://www.ojtech.com",
   email: "hello@ojtech.com",
-  phone: "+234 000 000 0000",
+  phones: ["0813 432 4983", "0806 336 2208"],
   serviceAreas: [
     "Nigeria",
     "Lagos",

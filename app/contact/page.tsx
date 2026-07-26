@@ -44,12 +44,21 @@ export default function ContactPage() {
                 >
                   <Mail className="h-5 w-5 text-brand-600" /> {siteConfig.email}
                 </a>
-                <a
-                  href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
-                  className="flex items-center gap-3 text-ink-900 hover:text-brand-700"
-                >
-                  <Phone className="h-5 w-5 text-brand-600" /> {siteConfig.phone}
-                </a>
+                {siteConfig.phones.map((phone, index) => (
+                  <a
+                    key={phone}
+                    href={`tel:+234${phone.replace(/\s+/g, "").slice(1)}`}
+                    className="flex items-center gap-3 text-ink-900 hover:text-brand-700"
+                  >
+                    <Phone className="h-5 w-5 text-brand-600" />
+                    {phone}
+                    {index === 0 && (
+                      <span className="text-xs font-medium uppercase tracking-wide text-ink-700/50">
+                        Primary
+                      </span>
+                    )}
+                  </a>
+                ))}
                 <div className="flex items-start gap-3 text-ink-700">
                   <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
                   <span>Serving clients across {siteConfig.serviceAreas.join(", ")}, and internationally.</span>

@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/data/site-config";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { Footer } from "@/components/layout/Footer";
 import { ServiceWorkerRegistration } from "@/components/pwa/ServiceWorkerRegistration";
+import { ScrollToTop } from "@/components/shared/ScrollToTop";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -97,6 +98,7 @@ export default function RootLayout({
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ScrollToTop />
         <ServiceWorkerRegistration />
       </body>
     </html>
