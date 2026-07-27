@@ -52,7 +52,7 @@ export async function POST(request: Request) {
   }
   await sendEmail({
     to: enquiry.email,
-    subject: "We received your message — OJTech",
+    subject: "We received your message — Olamitobi Technologies",
     react: EnquiryAcknowledgement({ name: enquiry.name, context: "message" }),
   });
 

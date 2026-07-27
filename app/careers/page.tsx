@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join OJTech — a team building software, digital products, and technology solutions for businesses across Africa and beyond.",
+    "Join Olamitobi Technologies — a team building software, digital products, and technology solutions for businesses across Africa and beyond.",
   alternates: { canonical: "/careers" },
 };
 

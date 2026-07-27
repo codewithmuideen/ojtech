@@ -9,7 +9,7 @@ import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Software development, product design, cloud, AI, cybersecurity, digital marketing, training, consulting, and technology services from OJTech.",
+    "Software development, product design, cloud, AI, cybersecurity, digital marketing, training, consulting, and technology services from Olamitobi Technologies.",
   alternates: { canonical: "/services" },
 };
 

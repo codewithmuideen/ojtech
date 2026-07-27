@@ -6,7 +6,7 @@ import { ConsultationForm } from "@/components/forms/ConsultationForm";
 export const metadata: Metadata = {
   title: "Book a Consultation",
   description:
-    "Book a free consultation with OJTech to talk through your project or technology challenge.",
+    "Book a free consultation with Olamitobi Technologies to talk through your project or technology challenge.",
   alternates: { canonical: "/book-consultation" },
 };
 

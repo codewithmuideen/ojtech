@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Practical thinking on software development, AI, cybersecurity, cloud, and digital transformation from the OJTech team.",
+    "Practical thinking on software development, AI, cybersecurity, cloud, and digital transformation from the Olamitobi Technologies team.",
   alternates: { canonical: "/insights" },
 };
 

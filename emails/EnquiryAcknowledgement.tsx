@@ -22,7 +22,7 @@ export default function EnquiryAcknowledgement({
   return (
     <Html>
       <Head />
-      <Preview>We received your {context} — OJTech</Preview>
+      <Preview>We received your {context} — Olamitobi Technologies</Preview>
       <Body style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#17162a" }}>
         <Container
           style={{
@@ -38,7 +38,7 @@ export default function EnquiryAcknowledgement({
           </Heading>
           <Section>
             <Text style={{ color: "rgba(255,255,255,0.7)" }}>
-              A member of the OJTech team will review it and get back to
+              A member of the Olamitobi Technologies team will review it and get back to
               you shortly. If your request is time-sensitive, feel free to reply
               directly to this email.
             </Text>

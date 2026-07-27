@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with OJTech to discuss your software, digital product, or technology project.",
+    "Get in touch with Olamitobi Technologies to discuss your software, digital product, or technology project.",
   alternates: { canonical: "/contact" },
 };
 

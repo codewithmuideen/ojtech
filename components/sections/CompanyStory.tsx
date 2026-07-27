@@ -15,13 +15,13 @@ export function CompanyStory() {
               Our Story
             </p>
             <h2 className="mt-4 font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
-              Formerly {siteConfig.formerName}. Now {siteConfig.name}.
+              Building technology since {siteConfig.foundedYear}.
             </h2>
             <p className="mt-6 text-ink-700 leading-relaxed">
-              Since {siteConfig.foundedYear}, we&apos;ve helped businesses embrace
-              digital transformation through high-quality software. Today, as{" "}
-              {siteConfig.name}, we carry that experience into a new era of
-              innovation, excellence, and global impact.
+              Since {siteConfig.foundedYear}, {siteConfig.name} has helped
+              businesses embrace digital transformation through high-quality
+              software — carrying that experience into every project we take
+              on today.
             </p>
             <Link
               href="/about"

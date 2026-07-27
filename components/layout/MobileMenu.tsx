@@ -49,7 +49,7 @@ export function MobileMenu() {
                     <Link href="/" onClick={() => setOpen(false)}>
                       <Image
                         src="/logo_white.png"
-                        alt="OJTech"
+                        alt="Olamitobi Technologies"
                         width={140}
                         height={36}
                         className="h-8 w-auto"

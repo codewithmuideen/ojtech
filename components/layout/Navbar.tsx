@@ -43,7 +43,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center">
           <Image
             src={transparent ? "/logo_white.png" : "/logo.png"}
-            alt="OJTech"
+            alt="Olamitobi Technologies"
             width={140}
             height={36}
             priority

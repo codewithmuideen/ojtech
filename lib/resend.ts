@@ -13,7 +13,7 @@ export function getResendClient(): Resend | null {
 // Falls back to Resend's shared sandbox sender, which works without a
 // verified domain but can only deliver to the Resend account's own email.
 export const FROM_EMAIL =
-  process.env.RESEND_FROM_EMAIL || "OJTech <onboarding@resend.dev>";
+  process.env.RESEND_FROM_EMAIL || "Olamitobi Technologies <onboarding@resend.dev>";
 
 export const ADMIN_EMAIL = process.env.RESEND_ADMIN_EMAIL;
 

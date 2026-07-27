@@ -10,7 +10,7 @@ import { IndustriesGrid } from "@/components/sections/IndustriesGrid";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { TechStackMarquee } from "@/components/sections/TechStackMarquee";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
-import { WhyOJTech } from "@/components/sections/WhyOJTech";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { CompanyStory } from "@/components/sections/CompanyStory";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CTASection } from "@/components/sections/CTASection";
@@ -34,7 +34,7 @@ export default function HomePage() {
       <FeaturedProjects />
       <TechStackMarquee />
       <ProcessTimeline />
-      <WhyOJTech />
+      <WhyChooseUs />
       <CompanyStory />
       <Testimonials />
       <CTASection />

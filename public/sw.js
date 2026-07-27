@@ -1,8 +1,8 @@
-// Minimal hand-written service worker for OJTech.
+// Minimal hand-written service worker for Olamitobi Technologies.
 // Cache-first for static assets, network-first for page navigations, with
 // an offline fallback page. Deliberately does not cache /api/ responses.
 
-const CACHE_NAME = "ojtech-static-v1";
+const CACHE_NAME = "olamitobitech-static-v1";
 const OFFLINE_URL = "/offline";
 
 const PRECACHE_URLS = [

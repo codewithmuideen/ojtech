@@ -51,7 +51,7 @@ export async function POST(request: Request) {
   }
   await sendEmail({
     to: consultation.email,
-    subject: "We received your consultation request — OJTech",
+    subject: "We received your consultation request — Olamitobi Technologies",
     react: EnquiryAcknowledgement({ name: consultation.name, context: "consultation request" }),
   });
 

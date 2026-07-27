@@ -1,6 +1,6 @@
-# OJTech — Website & PWA
+# Olamitobi Technologies — Website & PWA
 
-Marketing website and installable PWA for OJTech (OJ Technologies), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS v4.
+Marketing website and installable PWA for Olamitobi Technologies, built with Next.js 16 (App Router), TypeScript, and Tailwind CSS v4.
 
 This is a **frontend-first build**: the full marketing site, design system, and PWA are complete and production-ready. The backend (Prisma schema, form persistence, transactional email, admin dashboard) is scaffolded but not wired to live services — see [Backend status](#backend-status) below.
 

@@ -13,7 +13,7 @@ export function Footer() {
           <div>
             <Image
               src="/logo_white.png"
-              alt="OJTech"
+              alt="Olamitobi Technologies"
               width={160}
               height={40}
               className="h-9 w-auto"

@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "In-depth looks at how OJTech approaches complex technology challenges — from discovery through implementation.",
+    "In-depth looks at how Olamitobi Technologies approaches complex technology challenges — from discovery through implementation.",
   alternates: { canonical: "/case-studies" },
 };
 

@@ -6,7 +6,7 @@ import { QuoteWizard } from "@/components/forms/QuoteWizard";
 export const metadata: Metadata = {
   title: "Request a Quote",
   description:
-    "Tell us about your project and get a tailored quote from OJTech.",
+    "Tell us about your project and get a tailored quote from Olamitobi Technologies.",
   alternates: { canonical: "/request-a-quote" },
 };
 

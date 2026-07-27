@@ -11,7 +11,7 @@ import { TeamGrid } from "@/components/sections/TeamGrid";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "OJTech — formerly Olamitobi Technologies — has been building software and digital solutions since 2011. Learn our story, mission, and vision.",
+    "Olamitobi Technologies has been building software and digital solutions since 2011. Learn our story, mission, and vision.",
   alternates: { canonical: "/about" },
 };
 
@@ -20,7 +20,7 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        title={`Formerly ${siteConfig.formerName}. Now ${siteConfig.name}.`}
+        title={`Building innovative digital solutions since ${siteConfig.foundedYear}.`}
         description="A technology company dedicated to designing, developing, and delivering innovative digital solutions for businesses, startups, organizations, and government institutions."
       />
 
@@ -31,11 +31,6 @@ export default function AboutPage() {
               {siteConfig.name} is a technology company dedicated to designing,
               developing, and delivering innovative digital solutions for
               businesses, startups, organizations, and government institutions.
-            </p>
-            <p className="mt-6 text-lg leading-relaxed text-ink-700">
-              Formerly known as {siteConfig.formerName}, we have evolved into{" "}
-              {siteConfig.name} — a modern brand that reflects our vision for
-              innovation, excellence, and global impact.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-ink-700">
               Since our establishment in {siteConfig.foundedYear}, we have

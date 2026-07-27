@@ -32,7 +32,7 @@ export async function POST(request: Request) {
 
   await sendEmail({
     to: parsed.data.email,
-    subject: "You're subscribed — OJTech",
+    subject: "You're subscribed — Olamitobi Technologies",
     react: NewsletterConfirmation(),
   });
 

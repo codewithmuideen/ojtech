@@ -5,7 +5,7 @@ export interface Faq {
 
 export const generalFaqs: Faq[] = [
   {
-    question: "What kinds of businesses does OJTech work with?",
+    question: "What kinds of businesses does Olamitobi Technologies work with?",
     answer:
       "We work with startups, SMEs, enterprises, and government institutions across Nigeria and internationally — anywhere a business needs reliable software, digital products, or technology infrastructure.",
   },

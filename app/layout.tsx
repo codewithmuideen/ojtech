@@ -72,12 +72,13 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: siteConfig.name,
-  alternateName: siteConfig.formerName,
   url: siteConfig.url,
   logo: `${siteConfig.url}/logo.png`,
   foundingDate: String(siteConfig.foundedYear),
   description: siteConfig.description,
   areaServed: siteConfig.serviceAreas,
+  email: siteConfig.email,
+  telephone: siteConfig.phones[0],
   sameAs: Object.values(siteConfig.social),
 };
 

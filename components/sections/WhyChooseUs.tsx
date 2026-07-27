@@ -30,13 +30,13 @@ const reasons = [
   },
 ];
 
-export function WhyOJTech() {
+export function WhyChooseUs() {
   return (
     <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <Reveal>
           <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand-700">
-            Why OJTech
+            Why {siteConfig.name}
           </p>
           <h2 className="mt-4 max-w-xl font-display text-3xl font-semibold text-ink-900 sm:text-4xl">
             A partner built for long-term technology relationships.

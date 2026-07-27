@@ -54,7 +54,7 @@ export async function POST(request: Request) {
   }
   await sendEmail({
     to: quote.email,
-    subject: "We received your quote request — OJTech",
+    subject: "We received your quote request — Olamitobi Technologies",
     react: EnquiryAcknowledgement({ name: quote.fullName, context: "quote request" }),
   });
 

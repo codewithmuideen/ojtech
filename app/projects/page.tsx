@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "A look at the platforms, products, and systems OJTech has built across fintech, healthcare, logistics, government, and more.",
+    "A look at the platforms, products, and systems Olamitobi Technologies has built across fintech, healthcare, logistics, government, and more.",
   alternates: { canonical: "/projects" },
 };
 

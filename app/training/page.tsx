@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Training",
   description:
-    "Hands-on technology training in web development, mobile, cloud, cybersecurity, data, and AI from OJTech.",
+    "Hands-on technology training in web development, mobile, cloud, cybersecurity, data, and AI from Olamitobi Technologies.",
   alternates: { canonical: "/training" },
 };
 

@@ -13,7 +13,7 @@ export default function NewsletterConfirmation() {
   return (
     <Html>
       <Head />
-      <Preview>You&apos;re subscribed to OJTech insights</Preview>
+      <Preview>You&apos;re subscribed to Olamitobi Technologies insights</Preview>
       <Body style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#17162a" }}>
         <Container
           style={{
@@ -29,7 +29,7 @@ export default function NewsletterConfirmation() {
           </Heading>
           <Section>
             <Text style={{ color: "rgba(255,255,255,0.7)" }}>
-              Thanks for subscribing to OJTech insights. You&apos;ll
+              Thanks for subscribing to Olamitobi Technologies insights. You&apos;ll
               hear from us occasionally with practical thinking on software,
               cloud, AI, and digital transformation — no spam.
             </Text>
