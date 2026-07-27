@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: [{ url: "/logo.png", width: 1200, height: 630, alt: siteConfig.name }],
   },
