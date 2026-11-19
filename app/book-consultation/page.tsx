@@ -23,7 +23,7 @@ export default function BookConsultationPage() {
           </h1>
           <p className="mt-4 text-ink-700 leading-relaxed">
             Share your preferred date and time and what you&apos;d like to
-            discuss — we&apos;ll confirm a slot that works for both sides.
+            discuss, we&apos;ll confirm a slot that works for both sides.
           </p>
         </Reveal>
 

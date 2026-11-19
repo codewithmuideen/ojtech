@@ -34,7 +34,7 @@ export function AcademySection() {
           <Reveal className="relative min-h-[26rem] overflow-hidden rounded-3xl">
             <Image
               src="/images/training-students.webp"
-              alt="Students learning to code at Olamitobi Training Academy"
+              alt="Students learning to code in a computer lab"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"

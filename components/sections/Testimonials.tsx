@@ -35,7 +35,7 @@ export function Testimonials() {
                   <Quote className="h-6 w-6 text-brand-400" />
                   <p className="mt-4 text-white/80">{t.quote}</p>
                   <footer className="mt-4 text-sm text-white/50">
-                    {t.author}, {t.role} — {t.company}
+                    {t.author}, {t.role}, {t.company}
                   </footer>
                 </blockquote>
               ))}

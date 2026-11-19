@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Solutions",
   description:
-    "Packaged technology solutions from Olamitobi Technologies — from startup MVPs to enterprise modernization and embedded product teams.",
+    "Packaged technology solutions from Olamitobi Technologies, from startup MVPs to enterprise modernization and embedded product teams.",
   alternates: { canonical: "/solutions" },
 };
 
@@ -20,7 +20,7 @@ export default function SolutionsPage() {
       <PageHero
         eyebrow="Solutions"
         title="Curated technology solutions for common business needs."
-        description="Beyond individual services, we package our expertise into solutions built around the outcomes businesses actually need — from validating a new idea to modernizing a legacy enterprise system."
+        description="Beyond individual services, we package our expertise into solutions built around the outcomes businesses actually need, from validating a new idea to modernizing a legacy enterprise system."
       />
 
       <div className="bg-white pb-24 sm:pb-32">

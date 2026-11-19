@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = {
   title: "Case Studies",
   description:
-    "In-depth looks at how Olamitobi Technologies approaches complex technology challenges — from discovery through implementation.",
+    "In-depth looks at how Olamitobi Technologies approaches complex technology challenges, from discovery through implementation.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -20,7 +20,7 @@ export default function CaseStudiesPage() {
       <PageHero
         eyebrow="Case Studies"
         title="How we approach complex problems, end to end."
-        description="Deeper editorial breakdowns of our process — from research and strategy through implementation and lessons learned."
+        description="Deeper editorial breakdowns of our process, from research and strategy through implementation and lessons learned."
       />
 
       <div className="bg-white pb-24 sm:pb-32">

@@ -15,7 +15,7 @@ export interface CaseStudy {
   implementation: string;
   results: string[];
   lessonsLearned: string;
-  /** Marks illustrative sample work — not a real named client. */
+  /** Marks illustrative sample work, not a real named client. */
   isPlaceholder: true;
 }
 
@@ -56,7 +56,7 @@ export const caseStudies: CaseStudy[] = [
       "Full audit trail supporting ongoing compliance reporting",
     ],
     lessonsLearned:
-      "Involving the compliance stakeholder inside the build cycle — not just at the end — turned out to be the single biggest factor in hitting the launch date without late-stage rework.",
+      "Involving the compliance stakeholder inside the build cycle, not just at the end, turned out to be the single biggest factor in hitting the launch date without late-stage rework.",
     isPlaceholder: true,
   },
   {
@@ -78,7 +78,7 @@ export const caseStudies: CaseStudy[] = [
     research:
       "We shadowed front-desk and clinical workflows across two branches to understand where paper processes were actually breaking down, rather than assuming a generic EHR structure would fit.",
     strategy:
-      "We prioritized a phased rollout — starting with scheduling and basic records, then layering in richer clinical documentation — to avoid disrupting patient care during go-live.",
+      "We prioritized a phased rollout, starting with scheduling and basic records, then layering in richer clinical documentation, to avoid disrupting patient care during go-live.",
     design:
       "Interfaces were designed for fast data entry during time-pressured patient visits, prioritizing speed and error prevention over visual complexity.",
     development:
@@ -128,7 +128,7 @@ export const caseStudies: CaseStudy[] = [
       "Direct integration with existing agency case management workflows",
     ],
     lessonsLearned:
-      "Designing for the least tech-comfortable citizen first — rather than the average user — made the platform genuinely accessible rather than accessible on paper only.",
+      "Designing for the least tech-comfortable citizen first, rather than the average user, made the platform genuinely accessible rather than accessible on paper only.",
     isPlaceholder: true,
   },
 ];

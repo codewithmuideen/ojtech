@@ -16,7 +16,7 @@ export interface TeamMember {
 }
 
 // TODO(client): swap `photo` for real headshots as soon as they're
-// available — these are stable placeholder portraits (not photos of real
+// available, these are stable placeholder portraits (not photos of real
 // people, sourced from a demo-avatar API), not actual photos of the team.
 export const team: TeamMember[] = [
   { name: "Muideen Akinroye", role: "Founder", founder: true, photo: "/ceo.jpg" },

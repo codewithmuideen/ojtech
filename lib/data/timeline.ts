@@ -5,7 +5,7 @@ export interface TimelineEntry {
 }
 
 // TODO(client): add verified milestones (year + description) beyond the
-// founding year — intentionally left for the client to supply rather than
+// founding year, intentionally left for the client to supply rather than
 // invented.
 export const companyTimeline: TimelineEntry[] = [
   {

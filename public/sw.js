@@ -42,7 +42,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Never cache API responses — enquiries/forms must always hit the network.
+  // Never cache API responses, enquiries/forms must always hit the network.
   if (url.pathname.startsWith("/api/")) {
     return;
   }

@@ -7,7 +7,7 @@ export interface JobOpening {
 }
 
 // TODO(client): populate with real, currently-open positions. Left empty
-// rather than fabricated — the Careers page renders an "always open to
+// rather than fabricated, the Careers page renders an "always open to
 // great talent" state until real openings are supplied.
 export const jobOpenings: JobOpening[] = [];
 
@@ -22,7 +22,7 @@ export const cultureValues = [
   },
   {
     title: "Directness",
-    description: "We give and expect honest, constructive feedback — early and often.",
+    description: "We give and expect honest, constructive feedback, early and often.",
   },
   {
     title: "Growth",

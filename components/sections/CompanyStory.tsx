@@ -20,7 +20,7 @@ export function CompanyStory() {
             <p className="mt-6 text-ink-700 leading-relaxed">
               Since {siteConfig.foundedYear}, {siteConfig.name} has helped
               businesses embrace digital transformation through high-quality
-              software — carrying that experience into every project we take
+              software, carrying that experience into every project we take
               on today.
             </p>
             <Link

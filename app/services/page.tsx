@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="A full ecosystem of technology services."
-        description="From custom software and product design to cloud infrastructure, AI, and digital marketing — everything you need to build, launch, and scale."
+        description="From custom software and product design to cloud infrastructure, AI, and digital marketing, everything you need to build, launch, and scale."
       />
 
       <div className="bg-white pb-24 sm:pb-32">

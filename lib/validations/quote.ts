@@ -1,28 +1,28 @@
 import { z } from "zod";
 
 export const quoteSchema = z.object({
-  // Step 1 — About You
+  // Step 1, About You
   fullName: z.string().min(2, "Please enter your full name.").max(120),
   role: z.string().max(120).optional().or(z.literal("")),
 
-  // Step 2 — Business
+  // Step 2, Business
   company: z.string().min(2, "Please enter your company or organization name.").max(160),
   industry: z.string().max(120).optional().or(z.literal("")),
   website: z.string().max(200).optional().or(z.literal("")),
 
-  // Step 3 — Project Type
+  // Step 3, Project Type
   projectType: z.string().min(1, "Please select a project type."),
 
-  // Step 4 — Requirements
+  // Step 4, Requirements
   requirements: z.string().min(20, "Please describe your requirements in a bit more detail.").max(4000),
 
-  // Step 5 — Budget
+  // Step 5, Budget
   budget: z.string().min(1, "Please select a budget range."),
 
-  // Step 6 — Timeline
+  // Step 6, Timeline
   timeline: z.string().min(1, "Please select a preferred timeline."),
 
-  // Step 7 — Contact Details
+  // Step 7, Contact Details
   email: z.email("Please enter a valid email address."),
   phone: z.string().max(30).optional().or(z.literal("")),
 

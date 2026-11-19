@@ -14,7 +14,7 @@ const reasons = [
     icon: Gauge,
     title: `${new Date().getFullYear() - siteConfig.foundedYear}+ years of real delivery`,
     description:
-      "Since 2011, we've built software across industries — experience that shows up in fewer surprises during your project.",
+      "Since 2011, we've built software across industries, experience that shows up in fewer surprises during your project.",
   },
   {
     icon: Layers,
@@ -26,7 +26,7 @@ const reasons = [
     icon: Users,
     title: "Direct access to the people building your product",
     description:
-      "You work directly with the engineers and designers on your project — not layers of account management in between.",
+      "You work directly with the engineers and designers on your project, not layers of account management in between.",
   },
 ];
 

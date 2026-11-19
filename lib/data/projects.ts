@@ -9,7 +9,7 @@ export interface Project {
   challenge: string;
   solution: string;
   result: string;
-  /** Marks illustrative sample work — not a real named client. */
+  /** Marks illustrative sample work, not a real named client. */
   isPlaceholder?: boolean;
   /** Real, delivered work; client/brand name withheld rather than disclosed without sign-off. */
   nameWithheld?: boolean;
@@ -161,7 +161,7 @@ export const projects: Project[] = [
     challenge:
       "Land and house survey records, listings, and agency transactions were tracked across paper files and spreadsheets, making it difficult to verify property history or manage client transactions.",
     solution:
-      "We built a platform to digitize land and house survey records, manage property listings, and run agency workflows — from client inquiries through to transaction completion — in one system.",
+      "We built a platform to digitize land and house survey records, manage property listings, and run agency workflows, from client inquiries through to transaction completion, in one system.",
     result:
       "The firm gained a searchable digital record of surveyed properties and a structured agency workflow, replacing scattered paper files.",
     isPlaceholder: true,
@@ -210,7 +210,7 @@ export const projects: Project[] = [
     servicesDelivered: ["web-development", "uk-nigeria-business-partnerships", "digital-marketing"],
     technologies: ["Next.js", "SEO"],
     challenge:
-      "The company operates across two markets — Nigeria and the UK — and needed a consistent, professional web presence that speaks credibly to both audiences.",
+      "The company operates across two markets, Nigeria and the UK, and needed a consistent, professional web presence that speaks credibly to both audiences.",
     solution:
       "We built and maintain a multi-region site structure representing the company's Nigerian and UK operations under one consistent brand system.",
     result:

@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Row of icon "nodes" bridged by small arcs above them, with a label pill
- * under each node — mirrors the connected-chip step treatment from the
+ * under each node, mirrors the connected-chip step treatment from the
  * reference design, generalized to any node count so it can render each
  * item's technology tags.
  */
@@ -139,7 +139,7 @@ export function WhatWeBuild() {
           <div className="relative mx-auto mt-16 max-w-2xl overflow-hidden rounded-2xl border border-ink-900/10 bg-gradient-to-br from-white via-mist-50 to-brand-500/5 px-8 py-6 text-center shadow-sm">
             <Sparkles className="mx-auto h-5 w-5 text-brand-500" aria-hidden="true" />
             <p className="mt-3 font-display text-base font-semibold text-ink-900 sm:text-lg">
-              {siteConfig.shortName} — every system your business runs on, built by one team.
+              {siteConfig.shortName}, every system your business runs on, built by one team.
             </p>
           </div>
         </Reveal>

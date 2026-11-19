@@ -43,7 +43,7 @@ export const services: Service[] = [
     category: "Software & Product Development",
     summary: "Bespoke software built around how your business actually operates.",
     description:
-      "We design and build custom software that fits your workflows instead of forcing you to fit a template — from internal tools and customer-facing platforms to complex, multi-system integrations.",
+      "We design and build custom software that fits your workflows instead of forcing you to fit a template, from internal tools and customer-facing platforms to complex, multi-system integrations.",
     benefits: [
       "Software modeled on your real business processes, not generic assumptions",
       "Architecture built to scale as your team and user base grow",
@@ -65,7 +65,7 @@ export const services: Service[] = [
     category: "Software & Product Development",
     summary: "Fast, secure, and scalable web platforms for growing businesses.",
     description:
-      "From marketing sites to full web applications, we build for speed, accessibility, and search visibility from the first commit — engineered to hold up under real production traffic.",
+      "From marketing sites to full web applications, we build for speed, accessibility, and search visibility from the first commit, engineered to hold up under real production traffic.",
     benefits: [
       "Performance-first builds that load fast on any connection",
       "SEO-friendly architecture out of the box",
@@ -108,7 +108,7 @@ export const services: Service[] = [
     category: "Product Design",
     summary: "End-to-end product design, from first sketch to shipped feature.",
     description:
-      "We take products from a rough idea to a validated, usable experience — combining research, strategy, and design craft so what gets built actually gets used.",
+      "We take products from a rough idea to a validated, usable experience, combining research, strategy, and design craft so what gets built actually gets used.",
     benefits: [
       "Product decisions grounded in user research, not guesswork",
       "Design systems that keep growing products consistent",
@@ -129,7 +129,7 @@ export const services: Service[] = [
     category: "Product Design",
     summary: "Interfaces engineered for clarity, trust, and conversion.",
     description:
-      "Good UI/UX is invisible — it removes friction rather than adding decoration. We design interfaces that make complex products feel simple, and simple products feel premium.",
+      "Good UI/UX is invisible, it removes friction rather than adding decoration. We design interfaces that make complex products feel simple, and simple products feel premium.",
     benefits: [
       "Interfaces designed around real user behavior and testing",
       "Consistent visual language across every screen and platform",
@@ -172,7 +172,7 @@ export const services: Service[] = [
     category: "Cloud & Infrastructure",
     summary: "Cloud architecture that scales cost-effectively as you grow.",
     description:
-      "We design cloud infrastructure that matches your actual usage patterns — avoiding both the fragility of under-provisioning and the cost of over-engineering for scale you don't yet need.",
+      "We design cloud infrastructure that matches your actual usage patterns, avoiding both the fragility of under-provisioning and the cost of over-engineering for scale you don't yet need.",
     benefits: [
       "Infrastructure sized and costed for your current stage",
       "Migration paths that minimize downtime and risk",
@@ -215,7 +215,7 @@ export const services: Service[] = [
     category: "Digital Transformation",
     summary: "Automating the repetitive work that slows your team down.",
     description:
-      "We identify manual, repetitive workflows across your business and replace them with automated systems — freeing your team to focus on work that actually needs human judgment.",
+      "We identify manual, repetitive workflows across your business and replace them with automated systems, freeing your team to focus on work that actually needs human judgment.",
     benefits: [
       "Fewer manual errors from repetitive data entry and handoffs",
       "Faster turnaround on approvals, reporting, and operations",
@@ -236,7 +236,7 @@ export const services: Service[] = [
     category: "AI & Data",
     summary: "Practical AI features that solve specific business problems.",
     description:
-      "We integrate AI where it creates measurable value — automation, intelligent search, content generation, and decision support — grounded in what the underlying models can reliably do today.",
+      "We integrate AI where it creates measurable value, automation, intelligent search, content generation, and decision support, grounded in what the underlying models can reliably do today.",
     benefits: [
       "AI features scoped to reliable, well-understood use cases",
       "Integration with your existing data and systems",
@@ -258,7 +258,7 @@ export const services: Service[] = [
     category: "AI & Data",
     summary: "Turning scattered business data into decisions you can act on.",
     description:
-      "We build the data infrastructure and reporting tools that let you see what's actually happening in your business — without waiting on manual spreadsheets.",
+      "We build the data infrastructure and reporting tools that let you see what's actually happening in your business, without waiting on manual spreadsheets.",
     benefits: [
       "Centralized reporting across previously siloed systems",
       "Dashboards built around the metrics your team actually uses",
@@ -279,7 +279,7 @@ export const services: Service[] = [
     category: "Project Management",
     summary: "Structured delivery for technology projects of any size.",
     description:
-      "We bring disciplined project management to technology delivery — clear milestones, transparent reporting, and proactive risk management so projects land on time and on budget.",
+      "We bring disciplined project management to technology delivery, clear milestones, transparent reporting, and proactive risk management so projects land on time and on budget.",
     benefits: [
       "Clear milestones and delivery visibility from day one",
       "Proactive risk identification instead of last-minute surprises",
@@ -300,7 +300,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Independent technical guidance before you commit budget.",
     description:
-      "Before a major technology decision, we help you pressure-test the approach — architecture, vendor choice, build-vs-buy, and roadmap sequencing — so resources go where they'll count.",
+      "Before a major technology decision, we help you pressure-test the approach, architecture, vendor choice, build-vs-buy, and roadmap sequencing, so resources go where they'll count.",
     benefits: [
       "Independent perspective, not tied to a specific vendor or stack",
       "Clear technology roadmaps aligned to business priorities",
@@ -321,7 +321,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Practical IT strategy for growing organizations.",
     description:
-      "We help organizations make sense of their IT environment — infrastructure, systems, security posture, and support model — and build a plan to modernize without disrupting operations.",
+      "We help organizations make sense of their IT environment, infrastructure, systems, security posture, and support model, and build a plan to modernize without disrupting operations.",
     benefits: [
       "Clear picture of current IT strengths, gaps, and risks",
       "Prioritized modernization roadmap",
@@ -363,7 +363,7 @@ export const services: Service[] = [
     category: "Cloud & Infrastructure",
     summary: "CI/CD pipelines and infrastructure that let your team ship confidently.",
     description:
-      "We build the deployment pipelines, environment structure, and monitoring that let engineering teams ship frequently without fear — catching problems before they reach production.",
+      "We build the deployment pipelines, environment structure, and monitoring that let engineering teams ship frequently without fear, catching problems before they reach production.",
     benefits: [
       "Faster, safer deployments through automated pipelines",
       "Consistent environments from local development to production",
@@ -384,7 +384,7 @@ export const services: Service[] = [
     category: "Digital Transformation",
     summary: "Turning manual, paper-based operations into digital systems.",
     description:
-      "We help organizations move from manual processes and disconnected tools to integrated digital systems — sequenced realistically so operations keep running throughout the transition.",
+      "We help organizations move from manual processes and disconnected tools to integrated digital systems, sequenced realistically so operations keep running throughout the transition.",
     benefits: [
       "Transformation roadmap sequenced around business continuity",
       "Legacy process digitization without disrupting daily operations",
@@ -406,7 +406,7 @@ export const services: Service[] = [
     category: "Digital Marketing",
     summary: "Marketing systems built to drive measurable business outcomes.",
     description:
-      "We build and manage digital marketing programs — content, paid, and organic — with a focus on tracked outcomes rather than vanity metrics.",
+      "We build and manage digital marketing programs, content, paid, and organic, with a focus on tracked outcomes rather than vanity metrics.",
     benefits: [
       "Marketing tied to measurable business outcomes, not vanity metrics",
       "Content and campaigns matched to where your buyers actually are",
@@ -427,7 +427,7 @@ export const services: Service[] = [
     category: "Digital Marketing",
     summary: "Technical and content SEO built for sustainable organic growth.",
     description:
-      "We optimize technical foundations, content structure, and site architecture so search engines can find, understand, and rank your pages — for both Nigerian and international audiences.",
+      "We optimize technical foundations, content structure, and site architecture so search engines can find, understand, and rank your pages, for both Nigerian and international audiences.",
     benefits: [
       "Technical SEO foundations fixed at the architecture level",
       "Content structured around real search intent",
@@ -490,7 +490,7 @@ export const services: Service[] = [
     category: "IT Services",
     summary: "Responsive technical support that keeps your team productive.",
     description:
-      "We provide ongoing technical support for hardware, software, and network issues — keeping small problems from becoming operational disruptions.",
+      "We provide ongoing technical support for hardware, software, and network issues, keeping small problems from becoming operational disruptions.",
     benefits: [
       "Faster resolution of day-to-day technical issues",
       "Proactive maintenance to prevent recurring problems",
@@ -511,7 +511,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Practical technology training for individuals and teams.",
     description:
-      "We deliver hands-on training in software development, digital skills, and emerging technology — designed for people building real career capability, not just certificates.",
+      "We deliver hands-on training in software development, digital skills, and emerging technology, designed for people building real career capability, not just certificates.",
     benefits: [
       "Curriculum built around real, in-demand skills",
       "Hands-on projects, not just theoretical lectures",
@@ -532,7 +532,7 @@ export const services: Service[] = [
     category: "AI & Data",
     summary: "Custom AI chatbots that answer questions and handle tasks on your website or app.",
     description:
-      "We build AI-powered chatbots trained on your business's own information — products, services, FAQs, and processes — so visitors get accurate answers instantly instead of waiting on a human reply.",
+      "We build AI-powered chatbots trained on your business's own information, products, services, FAQs, and processes, so visitors get accurate answers instantly instead of waiting on a human reply.",
     benefits: [
       "Instant, accurate answers grounded in your actual business content",
       "Escalation to a human when the bot reaches the edge of what it knows",
@@ -553,7 +553,7 @@ export const services: Service[] = [
     category: "AI & Data",
     summary: "Automated customer conversations directly inside WhatsApp and Telegram.",
     description:
-      "We build chatbots on the messaging platforms your customers already use — automating order updates, FAQs, bookings, and support on WhatsApp and Telegram, with a clear path to a human agent when needed.",
+      "We build chatbots on the messaging platforms your customers already use, automating order updates, FAQs, bookings, and support on WhatsApp and Telegram, with a clear path to a human agent when needed.",
     benefits: [
       "Meets customers on the messaging apps they already check daily",
       "Automates repetitive questions and order/booking updates",
@@ -574,7 +574,7 @@ export const services: Service[] = [
     category: "Cybersecurity",
     summary: "Practical training and tools to help your team spot phishing and unsafe websites.",
     description:
-      "Most successful phishing attacks succeed because they look convincing, not because they're technically sophisticated. We train your team to recognize the warning signs — in emails, links, and websites — and put simple safeguards in place to reduce how often those attempts even reach an inbox.",
+      "Most successful phishing attacks succeed because they look convincing, not because they're technically sophisticated. We train your team to recognize the warning signs, in emails, links, and websites, and put simple safeguards in place to reduce how often those attempts even reach an inbox.",
     benefits: [
       "Practical, example-based training your team will actually remember",
       "Simple checklist for verifying a suspicious email or website before clicking",
@@ -595,7 +595,7 @@ export const services: Service[] = [
     category: "Personal & Small Business Services",
     summary: "Secure cloud galleries for wedding, graduation, and convocation photos and videos.",
     description:
-      "We create a private, branded online gallery for your event — wedding, graduation, convocation, or celebration — where your photos and videos are securely stored and easily shared with family, friends, and guests, without relying on group chats or overloaded phone storage.",
+      "We create a private, branded online gallery for your event, wedding, graduation, convocation, or celebration, where your photos and videos are securely stored and easily shared with family, friends, and guests, without relying on group chats or overloaded phone storage.",
     benefits: [
       "One shareable link instead of scattered group-chat photo dumps",
       "Secure cloud storage that doesn't fill up your guests' phones",
@@ -616,7 +616,7 @@ export const services: Service[] = [
     category: "Personal & Small Business Services",
     summary: "Finding, registering, and setting up the right domain name for you or your business.",
     description:
-      "We help you search for and register the right domain name, then handle the DNS setup so it correctly points to your website, email, and any other services it needs to — without the technical guesswork.",
+      "We help you search for and register the right domain name, then handle the DNS setup so it correctly points to your website, email, and any other services it needs to, without the technical guesswork.",
     benefits: [
       "Help choosing a domain name that fits your brand and is actually available",
       "Registration handled correctly the first time",
@@ -635,7 +635,7 @@ export const services: Service[] = [
     slug: "business-email-setup",
     name: "Business & Office Email Setup",
     category: "Personal & Small Business Services",
-    summary: "Professional email addresses on your own domain — yourname@yourbusiness.com.",
+    summary: "Professional email addresses on your own domain, yourname@yourbusiness.com.",
     description:
       "We set up professional email addresses on your own domain (through Google Workspace, Microsoft 365, or a similar provider), so your business communicates with a custom email address instead of a generic free-email account.",
     benefits: [
@@ -658,7 +658,7 @@ export const services: Service[] = [
     category: "Personal & Small Business Services",
     summary: "Practical online promotion to help small businesses get found and get customers.",
     description:
-      "For small businesses and individual entrepreneurs, we provide right-sized online promotion — social media presence, local listings, and simple advertising — to help you get discovered by customers without needing a full marketing department.",
+      "For small businesses and individual entrepreneurs, we provide right-sized online promotion, social media presence, local listings, and simple advertising, to help you get discovered by customers without needing a full marketing department.",
     benefits: [
       "Right-sized promotion that fits a small business budget",
       "Improved visibility on Google and social platforms",
@@ -679,7 +679,7 @@ export const services: Service[] = [
     category: "Software & Product Development",
     summary: "Custom desktop software for Windows and macOS.",
     description:
-      "We build desktop applications for businesses that need reliable, offline-capable software running directly on staff machines — from internal tools to point-of-sale systems.",
+      "We build desktop applications for businesses that need reliable, offline-capable software running directly on staff machines, from internal tools to point-of-sale systems.",
     benefits: [
       "Software that works reliably without depending on internet access",
       "Direct access to local hardware and file systems where needed",
@@ -700,7 +700,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Upskilling programs for existing company teams.",
     description:
-      "We design and deliver training programs for your existing staff — closing specific skill gaps identified in your team, rather than generic off-the-shelf courses.",
+      "We design and deliver training programs for your existing staff, closing specific skill gaps identified in your team, rather than generic off-the-shelf courses.",
     benefits: [
       "Curriculum built around your team's actual skill gaps",
       "Minimal disruption through flexible scheduling",
@@ -738,7 +738,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Practical training for founders and small business owners.",
     description:
-      "We train aspiring and early-stage entrepreneurs on the practical fundamentals of running a business — from planning and finance basics to digital tools for growth.",
+      "We train aspiring and early-stage entrepreneurs on the practical fundamentals of running a business, from planning and finance basics to digital tools for growth.",
     benefits: [
       "Practical frameworks, not abstract business theory",
       "Guidance tailored to Nigerian and African market realities",
@@ -757,7 +757,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Foundational digital literacy and workplace technology skills.",
     description:
-      "We deliver digital skills training covering everyday workplace technology — productivity tools, online safety, and basic digital literacy — for individuals and organizations building digital readiness.",
+      "We deliver digital skills training covering everyday workplace technology, productivity tools, online safety, and basic digital literacy, for individuals and organizations building digital readiness.",
     benefits: [
       "Accessible curriculum for varying digital literacy levels",
       "Immediately applicable workplace skills",
@@ -795,7 +795,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Training delivered directly at your organization's location.",
     description:
-      "We bring training directly to your team's workplace — reducing disruption and letting sessions reference your organization's actual tools and workflows.",
+      "We bring training directly to your team's workplace, reducing disruption and letting sessions reference your organization's actual tools and workflows.",
     benefits: [
       "No travel required for your staff",
       "Training grounded in your organization's real workflows",
@@ -814,7 +814,7 @@ export const services: Service[] = [
     category: "Training & Capacity Building",
     summary: "Training delivered at our training center, away from daily distractions.",
     description:
-      "We deliver focused training sessions at our training center — a change of environment that helps participants stay engaged without office interruptions.",
+      "We deliver focused training sessions at our training center, a change of environment that helps participants stay engaged without office interruptions.",
     benefits: [
       "Distraction-free learning environment",
       "Access to our training center facilities and equipment",
@@ -854,7 +854,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Identifying and fixing operational inefficiencies before automating anything.",
     description:
-      "Before recommending any technology, we map how work actually flows through your organization and identify where process — not software — is the real bottleneck.",
+      "Before recommending any technology, we map how work actually flows through your organization and identify where process, not software, is the real bottleneck.",
     benefits: [
       "Root-cause analysis before jumping to a tech solution",
       "Process improvements that often cost nothing to implement",
@@ -873,7 +873,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Practical technology and product guidance for early-stage founders.",
     description:
-      "We advise early-stage founders on product, technology, and team decisions — the kind of practical guidance that helps avoid expensive early mistakes.",
+      "We advise early-stage founders on product, technology, and team decisions, the kind of practical guidance that helps avoid expensive early mistakes.",
     benefits: [
       "Guidance from people who have actually shipped products",
       "Help avoiding common early-stage technical mistakes",
@@ -892,7 +892,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Independent review of software decisions before you commit.",
     description:
-      "We provide independent advisory on software architecture, vendor selection, and build approach — a second opinion before a costly decision gets locked in.",
+      "We provide independent advisory on software architecture, vendor selection, and build approach, a second opinion before a costly decision gets locked in.",
     benefits: [
       "Independent perspective, not tied to any vendor",
       "Risk flagged before contracts or development begin",
@@ -911,7 +911,7 @@ export const services: Service[] = [
     category: "Business Consulting",
     summary: "Independent advisory on cloud strategy before migration or spend commitments.",
     description:
-      "We advise organizations on cloud strategy and infrastructure decisions — provider selection, cost modeling, and migration risk — before commitments are made.",
+      "We advise organizations on cloud strategy and infrastructure decisions, provider selection, cost modeling, and migration risk, before commitments are made.",
     benefits: [
       "Cost modeling before, not after, a costly migration",
       "Provider-neutral recommendations",
@@ -951,7 +951,7 @@ export const services: Service[] = [
     category: "Education & Career Services",
     summary: "Practical guidance for students pursuing international education.",
     description:
-      "We guide students through the practical steps of pursuing international education — from institution and program selection to application readiness.",
+      "We guide students through the practical steps of pursuing international education, from institution and program selection to application readiness.",
     benefits: [
       "Guidance grounded in practical, current application realities",
       "Help narrowing institution and program choices",
@@ -1027,7 +1027,7 @@ export const services: Service[] = [
     category: "Education & Career Services",
     summary: "Ongoing guidance for early-career professionals in technology.",
     description:
-      "We pair early-career professionals with mentorship focused on practical career growth — skill development, career decisions, and industry navigation.",
+      "We pair early-career professionals with mentorship focused on practical career growth, skill development, career decisions, and industry navigation.",
     benefits: [
       "Guidance from people with direct industry experience",
       "Ongoing support rather than a single one-off session",
@@ -1067,7 +1067,7 @@ export const services: Service[] = [
     category: "Partnerships & Collaboration",
     summary: "Structured collaboration with corporate organizations on shared initiatives.",
     description:
-      "We build structured partnerships with corporate organizations around shared technology, training, or innovation initiatives — designed for mutual, measurable value.",
+      "We build structured partnerships with corporate organizations around shared technology, training, or innovation initiatives, designed for mutual, measurable value.",
     benefits: [
       "Partnerships structured around clear, shared objectives",
       "Access to combined technical and industry expertise",
@@ -1202,7 +1202,7 @@ export const services: Service[] = [
     category: "Government & Public Sector Services",
     summary: "Digital systems for government agencies and public institutions.",
     description:
-      "We design and build digital systems for government agencies — citizen-facing portals, internal case management, and digitized public processes — built for accessibility and accountability.",
+      "We design and build digital systems for government agencies, citizen-facing portals, internal case management, and digitized public processes, built for accessibility and accountability.",
     benefits: [
       "Systems designed for a broad, non-technical citizen base",
       "Built to integrate with existing agency processes",
@@ -1240,7 +1240,7 @@ export const services: Service[] = [
     category: "Government & Public Sector Services",
     summary: "Practical input on ICT policy grounded in implementation reality.",
     description:
-      "We provide practical, implementation-aware input on ICT policy — helping policy decisions account for real technical and operational constraints.",
+      "We provide practical, implementation-aware input on ICT policy, helping policy decisions account for real technical and operational constraints.",
     benefits: [
       "Policy input grounded in real implementation experience",
       "Reduced risk of policy that's impractical to execute",
@@ -1278,7 +1278,7 @@ export const services: Service[] = [
     category: "Government & Public Sector Services",
     summary: "Technology-enabled projects supporting community development goals.",
     description:
-      "We deliver technology-enabled projects supporting community development goals — from digital infrastructure to program management for community initiatives.",
+      "We deliver technology-enabled projects supporting community development goals, from digital infrastructure to program management for community initiatives.",
     benefits: [
       "Projects grounded in real community needs assessment",
       "Technology applied practically, not for its own sake",
@@ -1316,7 +1316,7 @@ export const services: Service[] = [
     category: "Government & Public Sector Services",
     summary: "Structured skills training tied to real employment or enterprise pathways.",
     description:
-      "We design structured skills acquisition programs — technical and vocational — tied to real pathways into employment or small enterprise, delivered at community or institutional scale.",
+      "We design structured skills acquisition programs, technical and vocational, tied to real pathways into employment or small enterprise, delivered at community or institutional scale.",
     benefits: [
       "Skills selected for real local employment and enterprise demand",
       "Structured pathway from training to income opportunity",
@@ -1337,7 +1337,7 @@ export const services: Service[] = [
     category: "Political & Constituency Services",
     summary: "Structured project management for political offices and campaigns.",
     description:
-      "We provide structured project management support for political offices — coordinating initiatives, timelines, and reporting with the same discipline as any large organization.",
+      "We provide structured project management support for political offices, coordinating initiatives, timelines, and reporting with the same discipline as any large organization.",
     benefits: [
       "Clear project structure and accountability",
       "Coordinated delivery across multiple initiatives",
@@ -1356,7 +1356,7 @@ export const services: Service[] = [
     category: "Political & Constituency Services",
     summary: "Structured programs delivering skills and opportunity to constituents.",
     description:
-      "We design and deliver structured empowerment programs — skills training, digital literacy, and enterprise support — for constituency-level initiatives.",
+      "We design and deliver structured empowerment programs, skills training, digital literacy, and enterprise support, for constituency-level initiatives.",
     benefits: [
       "Programs designed around real constituent needs",
       "Structured, trackable delivery and outcomes",
@@ -1375,7 +1375,7 @@ export const services: Service[] = [
     category: "Political & Constituency Services",
     summary: "Constituency-level youth programs focused on skills and opportunity.",
     description:
-      "We design youth-focused empowerment initiatives at the constituency level — combining digital skills, mentorship, and pathways to opportunity.",
+      "We design youth-focused empowerment initiatives at the constituency level, combining digital skills, mentorship, and pathways to opportunity.",
     benefits: [
       "Programs tailored to constituency-level youth needs",
       "Combination of training, mentorship, and real opportunity pathways",
@@ -1394,7 +1394,7 @@ export const services: Service[] = [
     category: "Political & Constituency Services",
     summary: "Digital tools and platforms supporting outreach and communication.",
     description:
-      "We build digital tools and platforms supporting outreach, communication, and constituent engagement — websites, messaging systems, and information platforms.",
+      "We build digital tools and platforms supporting outreach, communication, and constituent engagement, websites, messaging systems, and information platforms.",
     benefits: [
       "Reliable, well-built digital infrastructure",
       "Clear, accessible communication with constituents",
@@ -1434,7 +1434,7 @@ export const services: Service[] = [
     category: "Event & Program Management",
     summary: "End-to-end planning and execution of conferences, launches, and programs.",
     description:
-      "We plan and manage corporate and institutional events and programs — conferences, product launches, training programs, and multi-session initiatives — from logistics through execution.",
+      "We plan and manage corporate and institutional events and programs, conferences, product launches, training programs, and multi-session initiatives, from logistics through execution.",
     benefits: [
       "Single point of accountability from planning through execution",
       "Logistics handled so your team can focus on content and guests",
@@ -1531,7 +1531,7 @@ export const services: Service[] = [
     category: "Recruitment & Talent Services",
     summary: "Specialized recruitment for software, data, and IT roles.",
     description:
-      "We recruit for technical roles — software engineering, data, IT, and infrastructure — with screening informed by real hands-on technical experience, not just keyword matching.",
+      "We recruit for technical roles, software engineering, data, IT, and infrastructure, with screening informed by real hands-on technical experience, not just keyword matching.",
     benefits: [
       "Technical screening grounded in real engineering experience",
       "Faster identification of genuinely qualified candidates",
@@ -1571,7 +1571,7 @@ export const services: Service[] = [
     category: "Cybersecurity",
     summary: "Practical security training for non-technical staff.",
     description:
-      "We train non-technical staff on the everyday security habits that actually reduce risk — recognizing threats, safe practices, and what to do when something looks wrong.",
+      "We train non-technical staff on the everyday security habits that actually reduce risk, recognizing threats, safe practices, and what to do when something looks wrong.",
     benefits: [
       "Reduced human-error security incidents",
       "Practical habits, not overwhelming technical jargon",
@@ -1590,7 +1590,7 @@ export const services: Service[] = [
     category: "Cybersecurity",
     summary: "Practical information security guidance tailored to your organization.",
     description:
-      "We help organizations establish practical information security practices — access control, data handling, and device policy — sized appropriately to their actual risk level.",
+      "We help organizations establish practical information security practices, access control, data handling, and device policy, sized appropriately to their actual risk level.",
     benefits: [
       "Practices sized to your actual risk, not generic overkill",
       "Clear, actionable policy your team can actually follow",
@@ -1609,7 +1609,7 @@ export const services: Service[] = [
     category: "Cybersecurity",
     summary: "Training and guidance on responsible handling of personal data.",
     description:
-      "We train teams on responsible data handling practices — what counts as sensitive data, how to handle it safely, and how to avoid common data protection missteps.",
+      "We train teams on responsible data handling practices, what counts as sensitive data, how to handle it safely, and how to avoid common data protection missteps.",
     benefits: [
       "Reduced risk of avoidable data protection incidents",
       "Practical guidance mapped to your actual data handling",
@@ -1628,7 +1628,7 @@ export const services: Service[] = [
     category: "Cybersecurity",
     summary: "Advisory on privacy practices for products and organizations.",
     description:
-      "We advise organizations and product teams on privacy-conscious data practices — what to collect, how to store it, and how to communicate it clearly to users.",
+      "We advise organizations and product teams on privacy-conscious data practices, what to collect, how to store it, and how to communicate it clearly to users.",
     benefits: [
       "Reduced privacy risk in product and data decisions",
       "Clearer, more trustworthy user-facing privacy practices",
@@ -1668,7 +1668,7 @@ export const services: Service[] = [
     category: "Research & Development",
     summary: "Applied research into new software approaches and technical feasibility.",
     description:
-      "We conduct applied software research — evaluating new technical approaches, frameworks, or architectures — before committing to a full build.",
+      "We conduct applied software research, evaluating new technical approaches, frameworks, or architectures, before committing to a full build.",
     benefits: [
       "De-risked technical decisions before major investment",
       "Evidence-based recommendations, not guesswork",
@@ -1725,7 +1725,7 @@ export const services: Service[] = [
     category: "Research & Development",
     summary: "Practical market research to inform product and business decisions.",
     description:
-      "We conduct practical market research — competitive analysis, user research, and market sizing — to inform product and business decisions with real evidence.",
+      "We conduct practical market research, competitive analysis, user research, and market sizing, to inform product and business decisions with real evidence.",
     benefits: [
       "Decisions grounded in real market evidence",
       "Reduced risk of building for a misunderstood market",
@@ -1744,7 +1744,7 @@ export const services: Service[] = [
     category: "Research & Development",
     summary: "Structured assessment of whether a proposed project is viable.",
     description:
-      "We conduct structured feasibility studies for proposed projects — technical, financial, and operational — before significant resources are committed.",
+      "We conduct structured feasibility studies for proposed projects, technical, financial, and operational, before significant resources are committed.",
     benefits: [
       "Clear go/no-go evidence before major commitment",
       "Risk identified early, when it's still cheap to address",
@@ -1763,7 +1763,7 @@ export const services: Service[] = [
     category: "Research & Development",
     summary: "Structured support for organizations building new products or capabilities.",
     description:
-      "We support organizations exploring new products, services, or internal capabilities — bringing structured methodology to what's often an unstructured process.",
+      "We support organizations exploring new products, services, or internal capabilities, bringing structured methodology to what's often an unstructured process.",
     benefits: [
       "Structured methodology applied to early-stage exploration",
       "Reduced risk of chasing ideas without real validation",

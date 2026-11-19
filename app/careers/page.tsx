@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Join Olamitobi Technologies — a team building software, digital products, and technology solutions for businesses across Africa and beyond.",
+    "Join Olamitobi Technologies, a team building software, digital products, and technology solutions for businesses across Africa and beyond.",
   alternates: { canonical: "/careers" },
 };
 
@@ -20,7 +20,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Build technology that matters, with people who care about the craft."
-        description="We're always interested in hearing from talented engineers, designers, and technologists — even when a specific role isn't open."
+        description="We're always interested in hearing from talented engineers, designers, and technologists, even when a specific role isn't open."
       />
 
       <section className="bg-white py-20">

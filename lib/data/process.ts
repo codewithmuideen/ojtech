@@ -9,7 +9,7 @@ export const processSteps: ProcessStep[] = [
     step: "01",
     title: "Discover",
     description:
-      "We start by understanding your business, users, and constraints — through stakeholder interviews, data review, and technical audits.",
+      "We start by understanding your business, users, and constraints, through stakeholder interviews, data review, and technical audits.",
   },
   {
     step: "02",
@@ -51,6 +51,6 @@ export const processSteps: ProcessStep[] = [
     step: "08",
     title: "Support",
     description:
-      "We stay engaged post-launch — monitoring, fixing, and evolving the system as your business and users' needs change.",
+      "We stay engaged post-launch, monitoring, fixing, and evolving the system as your business and users' needs change.",
   },
 ];

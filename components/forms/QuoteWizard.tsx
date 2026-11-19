@@ -80,7 +80,7 @@ export function QuoteWizard() {
         open={status === "success"}
         onOpenChange={(open) => !open && setStatus("idle")}
         title="Quote request received"
-        description={`Thanks, ${getValues("fullName")?.split(" ")[0] || "there"} — our team will review your requirements and follow up by email within a few hours.`}
+        description={`Thanks, ${getValues("fullName")?.split(" ")[0] || "there"}, our team will review your requirements and follow up by email within a few hours.`}
       />
       {/* Progress indicator */}
       <div className="mb-10 flex items-center gap-2">
@@ -95,7 +95,7 @@ export function QuoteWizard() {
         ))}
       </div>
       <p className="mb-6 text-xs font-medium uppercase tracking-wide text-ink-700">
-        Step {stepIndex + 1} of {quoteSteps.length} — {step.title}
+        Step {stepIndex + 1} of {quoteSteps.length}: {step.title}
       </p>
 
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -308,7 +308,7 @@ function ReviewRow({ label, value }: { label: string; value?: string }) {
   return (
     <div className="flex items-center justify-between border-b border-ink-900/5 py-2 last:border-0">
       <span className="text-ink-700">{label}</span>
-      <span className="font-medium text-ink-900">{value || "—"}</span>
+      <span className="font-medium text-ink-900">{value || "Not provided"}</span>
     </div>
   );
 }

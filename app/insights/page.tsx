@@ -23,7 +23,7 @@ export default function InsightsPage() {
       <PageHero
         eyebrow="Insights"
         title="Practical thinking on technology and digital growth."
-        description="No fluff, no buzzword bingo — just grounded perspective from the team building these systems day to day."
+        description="No fluff, no buzzword bingo, just grounded perspective from the team building these systems day to day."
       />
 
       <div className="bg-white pb-24 sm:pb-32">

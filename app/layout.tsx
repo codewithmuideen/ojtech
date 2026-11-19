@@ -25,8 +25,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s — ${siteConfig.name}`,
+    default: `${siteConfig.name} | ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} | ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: ["/images/hero-engineers.webp"],
     site: "@olamitobitech",
@@ -116,7 +116,7 @@ const structuredData = {
     ...siteConfig.offices.map((o) => ({
       "@type": "ProfessionalService",
       "@id": `${siteConfig.url}/locations/${o.slug}#business`,
-      name: `${siteConfig.name} — ${o.city}`,
+      name: `${siteConfig.name} | ${o.city}`,
       url: `${siteConfig.url}/locations/${o.slug}`,
       image: `${siteConfig.url}${o.image}`,
       telephone: telephones,

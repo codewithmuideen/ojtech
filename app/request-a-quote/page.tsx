@@ -23,7 +23,7 @@ export default function RequestAQuotePage() {
           </h1>
           <p className="mt-4 text-ink-700 leading-relaxed">
             A few quick questions help us understand your project and come
-            back with a meaningful, tailored quote — not a generic template.
+            back with a meaningful, tailored quote, not a generic template.
           </p>
         </Reveal>
 

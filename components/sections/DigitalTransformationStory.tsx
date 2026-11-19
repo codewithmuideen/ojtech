@@ -18,7 +18,7 @@ const stages = [
     label: "Design",
     title: "Interfaces designed around how your team actually works.",
     description:
-      "Every workflow is designed around the people who will use it daily — not a generic template forced onto your business.",
+      "Every workflow is designed around the people who will use it daily, not a generic template forced onto your business.",
   },
   {
     label: "Technology",
@@ -30,7 +30,7 @@ const stages = [
     label: "Automation",
     title: "Repetitive work moves from people to systems.",
     description:
-      "Approvals, reporting, and data entry get automated — freeing your team to focus on work that needs real judgment.",
+      "Approvals, reporting, and data entry get automated, freeing your team to focus on work that needs real judgment.",
   },
   {
     label: "Growth",
@@ -58,7 +58,7 @@ export function DigitalTransformationStory() {
             <StickyCard key={stage.label} index={index} className="mb-6">
               <div className="rounded-3xl border border-white/10 bg-ink-900 p-8 sm:p-12">
                 <span className="font-display text-sm font-semibold text-brand-400">
-                  {String(index + 1).padStart(2, "0")} — {stage.label}
+                  {String(index + 1).padStart(2, "0")}. {stage.label}
                 </span>
                 <h3 className="mt-4 font-display text-2xl font-semibold sm:text-3xl">
                   {stage.title}

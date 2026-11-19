@@ -7,7 +7,7 @@ export const generalFaqs: Faq[] = [
   {
     question: "What kinds of businesses does Olamitobi Technologies work with?",
     answer:
-      "We work with startups, SMEs, enterprises, and government institutions across Nigeria and internationally — anywhere a business needs reliable software, digital products, or technology infrastructure.",
+      "We work with startups, SMEs, enterprises, and government institutions across Nigeria and internationally, anywhere a business needs reliable software, digital products, or technology infrastructure.",
   },
   {
     question: "How does a typical project start?",
@@ -22,7 +22,7 @@ export const generalFaqs: Faq[] = [
   {
     question: "Can you take over or extend an existing system?",
     answer:
-      "Yes — we regularly work with existing codebases and legacy systems, whether that means extending functionality, modernizing architecture, or integrating new tools.",
+      "Yes, we regularly work with existing codebases and legacy systems, whether that means extending functionality, modernizing architecture, or integrating new tools.",
   },
   {
     question: "How is pricing structured?",

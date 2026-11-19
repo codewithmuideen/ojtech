@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "Building Innovative Digital Solutions Since 2011",
   description:
     "Olamitobi Technologies partners with businesses, startups, enterprises, institutions, and organizations to build reliable software, digital products, training programs, consulting, and technology solutions that solve real-world problems.",
-  brandStatement: "Olamitobi Technologies — Building the Future Through Technology.",
+  brandStatement: "Olamitobi Technologies: Building the Future Through Technology.",
   url: "https://www.olamitobitechnologies.com.ng",
   // Primary/general-purpose contact address, used wherever a single email is shown.
   email: "contact@olamitobitechnologies.com.ng",
@@ -25,7 +25,7 @@ export const siteConfig = {
       label: "Ibadan Office",
       street: "7 Makinde Street, Orogun",
       full: "7 Makinde Street, Orogun, Ibadan, Oyo State, Nigeria",
-      image: "/images/office.webp",
+      image: "/images/office-ibadan.webp",
       mapQuery: "7 Makinde Street, Orogun, Ibadan, Nigeria",
     },
     {
@@ -35,7 +35,7 @@ export const siteConfig = {
       label: "Osogbo Office",
       street: "Plot 3, Opposite Government House Annex, Okefia",
       full: "Plot 3, Opposite Government House Annex, Okefia, Osogbo, Osun State, Nigeria",
-      image: "/images/workshop.webp",
+      image: "/images/office-osogbo.webp",
       mapQuery: "Government House Annex, Okefia, Osogbo, Nigeria",
     },
   ],

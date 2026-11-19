@@ -71,7 +71,7 @@ export default async function LocationPageView({
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "@id": `${siteConfig.url}/locations/${loc.slug}#business`,
-      name: `${siteConfig.name} — ${loc.city}`,
+      name: `${siteConfig.name} | ${loc.city}`,
       url: `${siteConfig.url}/locations/${loc.slug}`,
       image: `${siteConfig.url}${office.image}`,
       logo: `${siteConfig.url}/logo.png`,

@@ -2,14 +2,14 @@
 @plugin "tailwindcss-animate";
 
 :root {
-  /* Brand — gold */
+  /* Brand, gold */
   --color-brand-300: #e7d28c;
   --color-brand-400: #dcbe5e;
   --color-brand-500: #d4af37;
   --color-brand-600: #b3922b;
   --color-brand-700: #8a6f1f;
 
-  /* Ink — deep black/navy */
+  /* Ink, deep black/navy */
   --color-ink-950: #0b0f19;
   --color-ink-900: #1a1a1a;
   --color-ink-800: #2e2e30;

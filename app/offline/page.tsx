@@ -17,8 +17,8 @@ export default function OfflinePage() {
         You&apos;re offline
       </h1>
       <p className="mt-3 max-w-md text-ink-700">
-        It looks like you&apos;ve lost your connection. Reconnect and try again —
-        pages you&apos;ve already visited may still be available.
+        It looks like you&apos;ve lost your connection. Reconnect and try again.
+        Pages you&apos;ve already visited may still be available.
       </p>
       <Link
         href="/"

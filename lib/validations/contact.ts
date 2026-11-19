@@ -8,8 +8,8 @@ export const contactSchema = z.object({
   service: z.string().max(160).optional().or(z.literal("")),
   budget: z.string().max(80).optional().or(z.literal("")),
   timeline: z.string().max(80).optional().or(z.literal("")),
-  message: z.string().min(10, "Tell us a bit more — at least 10 characters.").max(4000),
-  // Honeypot field — must stay empty. Bots that fill every input trip this.
+  message: z.string().min(10, "Tell us a bit more, at least 10 characters.").max(4000),
+  // Honeypot field, must stay empty. Bots that fill every input trip this.
   company_website: z.string().max(0).optional().or(z.literal("")),
 });
 

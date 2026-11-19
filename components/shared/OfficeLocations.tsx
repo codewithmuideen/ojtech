@@ -35,7 +35,7 @@ export function OfficeLocations({
                 itemType="https://schema.org/LocalBusiness"
                 className="group overflow-hidden rounded-3xl border border-ink-900/10 bg-white shadow-sm transition-shadow duration-300 hover:shadow-2xl hover:shadow-ink-950/10"
               >
-                <meta itemProp="name" content={`${siteConfig.name} — ${office.city}`} />
+                <meta itemProp="name" content={`${siteConfig.name} | ${office.city}`} />
                 <div className="relative aspect-[16/9] overflow-hidden">
                   {withMap ? (
                     <iframe

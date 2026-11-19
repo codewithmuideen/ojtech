@@ -22,7 +22,7 @@ export function FeatureSplit() {
           <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem]">
             <Image
               src="/images/consulting-session.webp"
-              alt="Olamitobi consultants running a digital transformation workshop"
+              alt="Nigerian professionals in a business strategy meeting"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"

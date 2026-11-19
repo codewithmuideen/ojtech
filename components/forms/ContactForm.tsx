@@ -55,10 +55,10 @@ export function ContactForm() {
         open={status === "success"}
         onOpenChange={(open) => !open && setStatus("idle")}
         title="Message sent"
-        description="Thanks for reaching out — our team will get back to you within a few hours."
+        description="Thanks for reaching out, our team will get back to you within a few hours."
       />
       <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
-      {/* Honeypot — hidden from real users, catches naive bots */}
+      {/* Honeypot, hidden from real users, catches naive bots */}
       <input
         type="text"
         tabIndex={-1}

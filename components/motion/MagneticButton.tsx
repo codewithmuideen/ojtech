@@ -5,7 +5,7 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 
 /**
  * Wraps its child in a subtle magnetic-follow effect on pointer-fine
- * (desktop) devices only. On touch devices it renders inert — magnetic
+ * (desktop) devices only. On touch devices it renders inert, magnetic
  * cursor effects don't translate to touch and shouldn't be attempted.
  */
 export function MagneticButton({
