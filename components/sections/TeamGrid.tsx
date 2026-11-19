@@ -4,8 +4,18 @@ import Image from "next/image";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { UserRound } from "lucide-react";
 
-import { team, type TeamMember } from "@/lib/data/team";
+import { team, type TeamMember, type TeamMemberSocial } from "@/lib/data/team";
 import { RevealGroup, revealItem, RevealItem } from "@/components/motion/Reveal";
+import { LinkedInIcon, XIcon, FacebookIcon } from "@/components/shared/SocialIcons";
+import { cn } from "@/lib/utils";
+
+// Placeholder until each person's real profile links are added to team.ts --
+// keeps the icons visible everywhere without pointing anywhere real yet.
+const placeholderSocial: TeamMemberSocial = {
+  linkedin: "#",
+  x: "#",
+  facebook: "#",
+};
 
 const overlayVariants: Variants = {
   rest: { y: "100%" },
@@ -41,6 +51,56 @@ function Avatar({ member, size }: { member: TeamMember; size: number }) {
   );
 }
 
+function SocialLinks({
+  social,
+  className,
+  iconClassName,
+}: {
+  social?: TeamMemberSocial;
+  className?: string;
+  iconClassName?: string;
+}) {
+  if (!social || (!social.linkedin && !social.x && !social.facebook)) return null;
+
+  return (
+    <div className={cn("flex items-center justify-center gap-4", className)}>
+      {social.linkedin && (
+        <a
+          href={social.linkedin}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          className="transition-transform hover:scale-110"
+        >
+          <LinkedInIcon className={iconClassName} />
+        </a>
+      )}
+      {social.x && (
+        <a
+          href={social.x}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="X (Twitter)"
+          className="transition-transform hover:scale-110"
+        >
+          <XIcon className={iconClassName} />
+        </a>
+      )}
+      {social.facebook && (
+        <a
+          href={social.facebook}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Facebook"
+          className="transition-transform hover:scale-110"
+        >
+          <FacebookIcon className={iconClassName} />
+        </a>
+      )}
+    </div>
+  );
+}
+
 function FounderCard({ member }: { member: TeamMember }) {
   const shouldReduceMotion = useReducedMotion();
 
@@ -72,6 +132,11 @@ function FounderCard({ member }: { member: TeamMember }) {
             {member.bio}
           </p>
         )}
+        <SocialLinks
+          social={member.social ?? placeholderSocial}
+          className="mt-5 text-ink-700 opacity-0 transition-opacity duration-300 group-hover:text-white group-hover:opacity-100"
+          iconClassName="h-4 w-4"
+        />
       </div>
     </motion.div>
   );
@@ -88,6 +153,11 @@ function TeamCard({ member }: { member: TeamMember }) {
       </div>
       <p className="mt-4 font-display text-sm font-semibold text-ink-900">{member.name}</p>
       <p className="mt-1 text-xs text-ink-700">{member.role}</p>
+      <SocialLinks
+        social={member.social ?? placeholderSocial}
+        className="mt-3 text-ink-600 opacity-0 transition-opacity duration-300 group-hover:text-brand-700 group-hover:opacity-100"
+        iconClassName="h-3.5 w-3.5"
+      />
     </RevealItem>
   );
 }
@@ -101,7 +171,7 @@ export function TeamGrid() {
   return (
     <div className="mt-14">
       {founders.length > 0 && (
-        <div className="mx-auto grid max-w-3xl gap-6 sm:grid-cols-2">
+        <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-3">
           {founders.map((member) => (
             <FounderCard key={member.name} member={member} />
           ))}

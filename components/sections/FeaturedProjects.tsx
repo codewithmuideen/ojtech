@@ -6,7 +6,11 @@ import { Reveal, RevealGroup } from "@/components/motion/Reveal";
 import { Badge } from "@/components/ui/badge";
 
 export function FeaturedProjects() {
-  const featured = projects.slice(0, 10);
+  // Real, delivered work takes priority over illustrative samples so it
+  // never gets crowded out of the homepage teaser as more projects are added.
+  const featured = [...projects]
+    .sort((a, b) => Number(!!a.isPlaceholder) - Number(!!b.isPlaceholder))
+    .slice(0, 10);
 
   return (
     <section className="bg-mist-50 py-24 sm:py-32">

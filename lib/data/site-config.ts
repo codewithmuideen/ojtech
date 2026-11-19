@@ -17,6 +17,28 @@ export const siteConfig = {
     enquiries: "enquiries@olamitobitechnologies.com.ng",
   },
   phones: ["0813 432 4983", "0806 336 2208"],
+  offices: [
+    {
+      slug: "ibadan",
+      city: "Ibadan",
+      state: "Oyo State",
+      label: "Ibadan Office",
+      street: "7 Makinde Street, Orogun",
+      full: "7 Makinde Street, Orogun, Ibadan, Oyo State, Nigeria",
+      image: "/images/office.webp",
+      mapQuery: "7 Makinde Street, Orogun, Ibadan, Nigeria",
+    },
+    {
+      slug: "osogbo",
+      city: "Osogbo",
+      state: "Osun State",
+      label: "Osogbo Office",
+      street: "Plot 3, Opposite Government House Annex, Okefia",
+      full: "Plot 3, Opposite Government House Annex, Okefia, Osogbo, Osun State, Nigeria",
+      image: "/images/workshop.webp",
+      mapQuery: "Government House Annex, Okefia, Osogbo, Nigeria",
+    },
+  ],
   serviceAreas: [
     "Nigeria",
     "Lagos",
@@ -28,9 +50,11 @@ export const siteConfig = {
     "Kano",
   ],
   social: {
-    linkedin: "https://www.linkedin.com/company/olamitobitechnologies",
+    linkedin: "https://www.linkedin.com/in/olamitobi-technologies-51a80a155/",
     twitter: "https://twitter.com/olamitobitech",
-    instagram: "https://www.instagram.com/olamitobitech",
+    instagram: "https://www.instagram.com/olamitobitech/",
+    facebook: "https://www.facebook.com/olamitobitech/",
+    whatsapp: "https://wa.me/2348134324983",
   },
 } as const;
 
@@ -46,3 +70,23 @@ export const companyStats = [
   { value: "40+", label: "Businesses Supported" },
   { value: "12+", label: "Industries Served" },
 ] as const;
+
+export type Office = (typeof siteConfig.offices)[number];
+
+export function mapLink(office: Office): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.mapQuery)}`;
+}
+
+export function mapEmbed(office: Office): string {
+  return `https://maps.google.com/maps?q=${encodeURIComponent(office.mapQuery)}&z=15&output=embed`;
+}
+
+export function telHref(phone: string): string {
+  return `tel:+234${phone.replace(/\s+/g, "").slice(1)}`;
+}
+
+export const WHATSAPP_NUMBER = "2348134324983";
+
+export function whatsappLink(message: string): string {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}

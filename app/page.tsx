@@ -1,44 +1,43 @@
 import type { Metadata } from "next";
 
 import { siteConfig } from "@/lib/data/site-config";
-import { Hero } from "@/components/sections/Hero";
-import { TrustStats } from "@/components/sections/TrustStats";
-import { ServicesInteractive } from "@/components/sections/ServicesInteractive";
-import { DigitalTransformationStory } from "@/components/sections/DigitalTransformationStory";
-import { WhatWeBuild } from "@/components/sections/WhatWeBuild";
+import { HomeHero } from "@/components/home/HomeHero";
+import { CapabilitiesGrid } from "@/components/home/CapabilitiesGrid";
+import { FeatureSplit } from "@/components/home/FeatureSplit";
+import { AcademySection } from "@/components/home/AcademySection";
+import { FounderSection } from "@/components/home/FounderSection";
+import { LocalPresence } from "@/components/home/LocalPresence";
+import { TechStackMarquee } from "@/components/sections/TechStackMarquee";
 import { IndustriesGrid } from "@/components/sections/IndustriesGrid";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
-import { TechStackMarquee } from "@/components/sections/TechStackMarquee";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
-import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
-import { CompanyStory } from "@/components/sections/CompanyStory";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { CTASection } from "@/components/sections/CTASection";
-import { NewsletterSection } from "@/components/sections/NewsletterSection";
+import { OfficeLocations } from "@/components/shared/OfficeLocations";
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
-  description: siteConfig.description,
+  title: {
+    absolute: `${siteConfig.name} | Software, IT & Tech Training Company in Osogbo & Ibadan`,
+  },
+  description:
+    "Olamitobi Technologies is a leading tech company in Osogbo, Osun State and Ibadan, Oyo State: software development, website design, mobile apps, cloud, cybersecurity, AI and hands-on tech training courses since 2011.",
   alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
   return (
     <>
-      <Hero />
-      <TrustStats />
-      <ServicesInteractive />
-      <DigitalTransformationStory />
-      <WhatWeBuild />
+      <HomeHero />
+      <TechStackMarquee />
+      <CapabilitiesGrid />
+      <FeatureSplit />
+      <AcademySection />
+      <FounderSection />
       <IndustriesGrid />
       <FeaturedProjects />
-      <TechStackMarquee />
+      <LocalPresence />
       <ProcessTimeline />
-      <WhyChooseUs />
-      <CompanyStory />
-      <Testimonials />
+      <OfficeLocations />
       <CTASection />
-      <NewsletterSection />
     </>
   );
 }

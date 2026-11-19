@@ -29,7 +29,8 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <div
                 key={solution.slug}
-                className="flex flex-col rounded-3xl border border-ink-900/10 p-8"
+                id={solution.slug}
+                className="flex scroll-mt-28 flex-col rounded-3xl border border-ink-900/10 p-8"
               >
                 <h2 className="font-display text-xl font-semibold text-ink-900">
                   {solution.name}

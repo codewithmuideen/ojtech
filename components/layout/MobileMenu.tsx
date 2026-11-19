@@ -8,6 +8,8 @@ import { AnimatePresence, motion } from "motion/react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import { primaryNav } from "@/lib/data/nav";
+import { siteConfig, telHref } from "@/lib/data/site-config";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 import { Button } from "@/components/ui/button";
 
 export function MobileMenu() {
@@ -19,7 +21,7 @@ export function MobileMenu() {
         <button
           type="button"
           aria-label="Open menu"
-          className="flex h-10 w-10 items-center justify-center rounded-full text-current md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full text-current lg:hidden"
         >
           <Menu className="h-6 w-6" />
         </button>
@@ -48,7 +50,7 @@ export function MobileMenu() {
                   <DialogPrimitive.Title asChild>
                     <Link href="/" onClick={() => setOpen(false)}>
                       <Image
-                        src="/logo_white.png"
+                        src="/logo_part_white.png"
                         alt="Olamitobi Technologies"
                         width={140}
                         height={36}
@@ -97,6 +99,17 @@ export function MobileMenu() {
                     Start a Project
                   </Link>
                 </Button>
+                <div className="mt-8 space-y-1 text-sm text-white/60">
+                  {siteConfig.offices.map((o) => (
+                    <p key={o.slug}>
+                      <span className="font-medium text-white">{o.city}:</span> {o.street}
+                    </p>
+                  ))}
+                  <a href={telHref(siteConfig.phones[0])} className="block pt-2 text-white">
+                    {siteConfig.phones[0]}
+                  </a>
+                </div>
+                <SocialLinks links={siteConfig.social} className="mt-6" />
               </motion.div>
             </DialogPrimitive.Content>
           </DialogPrimitive.Portal>

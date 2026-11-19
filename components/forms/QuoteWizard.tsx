@@ -4,7 +4,7 @@ import * as React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { AnimatePresence, motion } from "motion/react";
-import { CheckCircle2, ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 
 import {
   quoteSchema,
@@ -26,6 +26,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
+import { SuccessModal } from "@/components/forms/SuccessModal";
 
 export function QuoteWizard() {
   const [stepIndex, setStepIndex] = React.useState(0);
@@ -61,7 +62,7 @@ export function QuoteWizard() {
   async function onSubmit(data: QuoteInput) {
     setStatus("loading");
     try {
-      const res = await fetch("/api/quote", {
+      const res = await fetch("/api/quote.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -73,23 +74,14 @@ export function QuoteWizard() {
     }
   }
 
-  if (status === "success") {
-    return (
-      <div className="flex flex-col items-center rounded-2xl border border-brand-500/20 bg-brand-50/40 px-8 py-20 text-center">
-        <CheckCircle2 className="h-12 w-12 text-brand-600" />
-        <h3 className="mt-4 font-display text-2xl font-semibold text-ink-900">
-          Quote request received
-        </h3>
-        <p className="mt-3 max-w-md text-sm text-ink-700">
-          Thanks, {getValues("fullName")?.split(" ")[0] || "there"} — our team will
-          review your requirements and follow up by email within one business day.
-        </p>
-      </div>
-    );
-  }
-
   return (
     <div>
+      <SuccessModal
+        open={status === "success"}
+        onOpenChange={(open) => !open && setStatus("idle")}
+        title="Quote request received"
+        description={`Thanks, ${getValues("fullName")?.split(" ")[0] || "there"} — our team will review your requirements and follow up by email within a few hours.`}
+      />
       {/* Progress indicator */}
       <div className="mb-10 flex items-center gap-2">
         {quoteSteps.map((s, i) => (

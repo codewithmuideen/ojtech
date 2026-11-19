@@ -26,7 +26,7 @@ export function ScrollToTop() {
       onClick={handleClick}
       aria-label="Scroll to top"
       tabIndex={visible ? 0 : -1}
-      className={`fixed bottom-6 right-6 z-30 flex h-11 w-11 items-center justify-center rounded-full bg-ink-900 text-white shadow-lg shadow-ink-900/20 transition-all duration-300 ease-out hover:bg-brand-600 ${
+      className={`fixed bottom-24 right-6 z-30 flex h-11 w-11 items-center justify-center rounded-full bg-ink-900 text-white shadow-lg shadow-ink-900/20 transition-all duration-300 ease-out hover:bg-brand-600 ${
         visible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-4 opacity-0"

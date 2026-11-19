@@ -5,6 +5,11 @@ import { services } from "@/lib/data/services";
 import { industries } from "@/lib/data/industries";
 import { projects } from "@/lib/data/projects";
 import { caseStudies } from "@/lib/data/case-studies";
+import { blogPosts } from "@/lib/data/blog";
+import { trainingCourses } from "@/lib/data/training";
+import { locationPages } from "@/lib/data/locations";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -51,11 +56,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
   }));
 
+  const priorityRoutes = [
+    ...locationPages.map((l) => ({
+      url: `${base}/locations/${l.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    })),
+    ...trainingCourses.map((c) => ({
+      url: `${base}/training/${c.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  const insightRoutes = blogPosts.map((post) => ({
+    url: `${base}/insights/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+  }));
+
   return [
     ...staticRoutes,
+    ...priorityRoutes,
     ...serviceRoutes,
     ...industryRoutes,
     ...projectRoutes,
     ...caseStudyRoutes,
+    ...insightRoutes,
   ];
 }

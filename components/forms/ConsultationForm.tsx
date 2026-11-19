@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 import {
   consultationSchema,
@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { SuccessModal } from "@/components/forms/SuccessModal";
 
 export function ConsultationForm() {
   const [status, setStatus] = React.useState<"idle" | "loading" | "success" | "error">(
@@ -28,7 +29,7 @@ export function ConsultationForm() {
   async function onSubmit(data: ConsultationInput) {
     setStatus("loading");
     try {
-      const res = await fetch("/api/consultation", {
+      const res = await fetch("/api/consultation.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -41,23 +42,15 @@ export function ConsultationForm() {
     }
   }
 
-  if (status === "success") {
-    return (
-      <div className="flex flex-col items-center rounded-2xl border border-brand-500/20 bg-brand-50/40 px-8 py-16 text-center">
-        <CheckCircle2 className="h-10 w-10 text-brand-600" />
-        <h3 className="mt-4 font-display text-xl font-semibold text-ink-900">
-          Request received
-        </h3>
-        <p className="mt-2 max-w-sm text-sm text-ink-700">
-          We&apos;ll confirm your preferred slot by email shortly. Thanks for
-          reaching out.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
+    <>
+      <SuccessModal
+        open={status === "success"}
+        onOpenChange={(open) => !open && setStatus("idle")}
+        title="Request received"
+        description="We'll confirm your preferred slot by email within a few hours. Thanks for reaching out."
+      />
+      <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
       <input
         type="text"
         tabIndex={-1}
@@ -135,6 +128,7 @@ export function ConsultationForm() {
         {status === "loading" && <Loader2 className="h-4 w-4 animate-spin" />}
         Request Consultation
       </Button>
-    </form>
+      </form>
+    </>
   );
 }

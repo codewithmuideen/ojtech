@@ -38,20 +38,11 @@ cp .env.example .env
 
 See `.env.example` for the full list (database, Resend, site URLs, auth). If `DATABASE_URL` isn't set, forms still work end-to-end against the API routes — they just log to the server console instead of persisting.
 
-## Backend Status
+## Backend (forms)
 
-1. **Database — live**: `DATABASE_URL` is connected (Postgres via the `@prisma/adapter-pg` driver adapter, which Prisma 7's `prisma-client` generator requires instead of reading the connection string implicitly). The Contact, Quote, Consultation, and Newsletter forms persist to Postgres via `lib/prisma.ts`. If your password contains special characters (e.g. `#`), URL-encode them in the connection string (`#` → `%23`) or avoid them.
+The site is a static export (`output: "export"`), so there is no Node server. The Contact, Quote and Consultation forms POST to small PHP endpoints in `public/api/*.php`, which send email via Resend (with a Gmail SMTP fallback through the bundled PHPMailer).
 
-   To (re-)apply schema changes:
-   ```bash
-   npx prisma migrate dev --name <description>
-   npx prisma generate
-   ```
-   The schema (`prisma/schema.prisma`) also covers blog, case studies, projects, testimonials, team, FAQs, careers, training, events, partners, technologies, media, and site settings — not yet wired to any UI, ready for the admin dashboard.
-
-2. **Email — not yet wired**: create a [Resend](https://resend.com) account, set `RESEND_API_KEY` in `.env`. Each route handler under `app/api/*/route.ts` has a `// TODO(backend)` comment marking exactly where to call Resend — the templates already exist in `emails/`, and `lib/resend.ts` returns `null` gracefully when no key is configured.
-
-3. **Admin dashboard**: not yet built. Planned as a follow-up: authentication, then CRUD screens over the Prisma models above.
+- Credentials live in `public/api/config.php`, which is **gitignored**. Copy `public/api/config.example.php` to `config.php` and fill in the real keys.
 
 ## Content
 
@@ -71,8 +62,16 @@ Search the codebase for `TODO(client)` and `TODO(backend)` to find every spot th
 - `app/manifest.ts` + `public/icons/*` (generate/regenerate via `node scripts/generate-icons.mjs` from `public/favicon.png`)
 - `public/sw.js` — hand-written service worker (cache-first for static assets, network-first for pages, `/offline` fallback). Registered from `components/pwa/ServiceWorkerRegistration.tsx`, production-only.
 
-## Deployment (Vercel)
+## Deployment (cPanel)
 
-1. Push to GitHub, import into Vercel.
-2. Set the environment variables from `.env.example` in the Vercel project settings.
-3. Deploy — no additional configuration needed. If/when a database is connected, add a `prisma generate` step (Vercel does this automatically when `@prisma/client` is a dependency).
+1. Make sure `public/api/config.php` exists with real credentials (see above).
+2. Run `npm run build`. This generates the static site in `out/`.
+3. In cPanel File Manager, upload the **contents** of `out/` (not the folder itself) into `public_html/`, including the hidden `.htaccess` file and the `api/` folder.
+4. Check `https://<domain>/`, `/training`, `/locations/osogbo` and submit a test form.
+
+## Local SEO checklist (outside the codebase)
+
+- Create and verify a **Google Business Profile** for each office (Ibadan and Osogbo) with the exact same name, address and phone shown on the site.
+- Submit `https://<domain>/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+- Put the website link in the bio of every social profile (Facebook, Instagram, X, LinkedIn).
+- Ask happy clients and students to leave Google reviews.

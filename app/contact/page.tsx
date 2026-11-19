@@ -5,6 +5,8 @@ import { siteConfig } from "@/lib/data/site-config";
 import { generalFaqs } from "@/lib/data/faqs";
 import { Reveal } from "@/components/motion/Reveal";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { OfficeLocations } from "@/components/shared/OfficeLocations";
+import { SocialLinks } from "@/components/shared/SocialLinks";
 import {
   Accordion,
   AccordionItem,
@@ -15,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Olamitobi Technologies to discuss your software, digital product, or technology project.",
+    "Contact Olamitobi Technologies: visit our offices at 7 Makinde Street, Orogun, Ibadan, or Plot 3, Opposite Government House Annex, Okefia, Osogbo. Call 0813 432 4983.",
   alternates: { canonical: "/contact" },
 };
 
@@ -59,10 +61,15 @@ export default function ContactPage() {
                     )}
                   </a>
                 ))}
-                <div className="flex items-start gap-3 text-ink-700">
-                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
-                  <span>Serving clients across {siteConfig.serviceAreas.join(", ")}, and internationally.</span>
-                </div>
+                {siteConfig.offices.map((office) => (
+                  <div key={office.slug} className="flex items-start gap-3 text-ink-700">
+                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-600" />
+                    <span>
+                      <span className="font-medium text-ink-900">{office.label}:</span> {office.full}
+                    </span>
+                  </div>
+                ))}
+                <SocialLinks links={siteConfig.social} tone="light" className="pt-4" />
               </div>
             </Reveal>
 
@@ -74,6 +81,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <OfficeLocations withMap />
 
       <section className="bg-mist-50 py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">

@@ -115,6 +115,74 @@ export const projects: Project[] = [
       "Citizens gained the ability to submit and track requests online, reducing the need for in-person visits for routine processes.",
     isPlaceholder: true,
   },
+  {
+    slug: "school-management-system",
+    name: "School Management System",
+    client: "Educational Institution, Nigeria",
+    industry: "Education",
+    summary:
+      "An all-in-one school administration platform covering attendance, ID cards, and an online result checker.",
+    servicesDelivered: ["software-development", "web-development", "business-automation"],
+    technologies: ["Next.js", "PostgreSQL", "Node.js"],
+    challenge:
+      "Attendance tracking, ID card issuance, and result checking were handled manually, creating bottlenecks at the start of each term and during result release.",
+    solution:
+      "We built a unified system covering student attendance tracking, digital ID card generation, and a scratch-card-based online result checker students and parents could use to view results securely, without visiting the school office.",
+    result:
+      "The school reduced term-start administrative bottlenecks and gave students and parents a self-service way to check results remotely.",
+    isPlaceholder: true,
+  },
+  {
+    slug: "government-payroll-system",
+    name: "Government Payroll & HR Management System",
+    client: "State Government Agency, Nigeria",
+    industry: "Government",
+    summary:
+      "A payroll and workforce management system handling detailed salary breakdowns, staff leave, and loan management.",
+    servicesDelivered: ["enterprise-solutions", "business-automation", "cybersecurity"],
+    technologies: ["Next.js", "PostgreSQL", "Azure"],
+    challenge:
+      "Payroll processing relied on manual spreadsheet calculations for salary components, deductions, leave balances, and staff loan repayments, with limited transparency for employees.",
+    solution:
+      "We built a payroll and HR system with itemized payslips (allowances, deductions, and full fine-print breakdowns), self-service leave request and approval workflows, and a staff loan module tracking disbursements and repayment schedules.",
+    result:
+      "The agency moved from manual payroll spreadsheets to an auditable system giving staff direct visibility into their own pay, leave balance, and loan status.",
+    isPlaceholder: true,
+  },
+  {
+    slug: "property-management-system",
+    name: "Property & Land Management Platform",
+    client: "Property Management Firm, Nigeria",
+    industry: "Real Estate",
+    summary:
+      "A platform for managing land and house surveys, property listings, and agency operations end-to-end.",
+    servicesDelivered: ["software-development", "web-development", "business-automation"],
+    technologies: ["Next.js", "PostgreSQL", "Node.js"],
+    challenge:
+      "Land and house survey records, listings, and agency transactions were tracked across paper files and spreadsheets, making it difficult to verify property history or manage client transactions.",
+    solution:
+      "We built a platform to digitize land and house survey records, manage property listings, and run agency workflows — from client inquiries through to transaction completion — in one system.",
+    result:
+      "The firm gained a searchable digital record of surveyed properties and a structured agency workflow, replacing scattered paper files.",
+    isPlaceholder: true,
+  },
+  {
+    slug: "tollgate-vehicle-tracking-system",
+    name: "Tollgate Management & Vehicle Tracking System",
+    client: "State Government Agency, Nigeria",
+    industry: "Government",
+    summary:
+      "A tollgate revenue management and vehicle tracking system for government-operated road infrastructure.",
+    servicesDelivered: ["software-development", "cloud-solutions", "business-automation"],
+    technologies: ["Next.js", "PostgreSQL", "Node.js"],
+    challenge:
+      "Toll collection was logged manually with limited real-time visibility into revenue per gate or the movement of monitored vehicles.",
+    solution:
+      "We built a tollgate management system tracking toll transactions per gate in real time, paired with a vehicle tracking module for monitoring fleet movement and flagging anomalies.",
+    result:
+      "The agency gained real-time visibility into toll revenue by gate and location-based tracking of monitored vehicles, improving accountability.",
+    isPlaceholder: true,
+  },
 
   // --- Delivered work; client/brand names withheld rather than disclosed without sign-off ---
   {

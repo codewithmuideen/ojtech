@@ -3,7 +3,7 @@
 import * as React from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 
 import { contactSchema, type ContactInput } from "@/lib/validations/contact";
 import { services } from "@/lib/data/services";
@@ -19,6 +19,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { SuccessModal } from "@/components/forms/SuccessModal";
 
 export function ContactForm() {
   const [status, setStatus] = React.useState<"idle" | "loading" | "success" | "error">(
@@ -35,7 +36,7 @@ export function ContactForm() {
   async function onSubmit(data: ContactInput) {
     setStatus("loading");
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("/api/contact.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -48,23 +49,15 @@ export function ContactForm() {
     }
   }
 
-  if (status === "success") {
-    return (
-      <div className="flex flex-col items-center rounded-2xl border border-brand-500/20 bg-brand-50/40 px-8 py-16 text-center">
-        <CheckCircle2 className="h-10 w-10 text-brand-600" />
-        <h3 className="mt-4 font-display text-xl font-semibold text-ink-900">
-          Message sent
-        </h3>
-        <p className="mt-2 max-w-sm text-sm text-ink-700">
-          Thanks for reaching out — our team will get back to you within one
-          business day.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
+    <>
+      <SuccessModal
+        open={status === "success"}
+        onOpenChange={(open) => !open && setStatus("idle")}
+        title="Message sent"
+        description="Thanks for reaching out — our team will get back to you within a few hours."
+      />
+      <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
       {/* Honeypot — hidden from real users, catches naive bots */}
       <input
         type="text"
@@ -169,6 +162,7 @@ export function ContactForm() {
         {status === "loading" && <Loader2 className="h-4 w-4 animate-spin" />}
         Send Message
       </Button>
-    </form>
+      </form>
+    </>
   );
 }

@@ -5,12 +5,15 @@ export interface Industry {
   challenges: string[];
   opportunities: string[];
   solutions: string[];
+  /** Featured in the nav dropdown and other curated industry lists. */
+  featured?: boolean;
 }
 
 export const industries: Industry[] = [
   {
     slug: "financial-services",
     name: "Financial Services",
+    featured: true,
     summary: "Secure, compliant digital platforms for banks, fintechs, and payment providers.",
     challenges: [
       "Legacy core systems that are costly to extend",
@@ -27,6 +30,7 @@ export const industries: Industry[] = [
   {
     slug: "healthcare",
     name: "Healthcare",
+    featured: true,
     summary: "Digital systems that improve patient experience without compromising data security.",
     challenges: [
       "Fragmented patient records across systems",
@@ -43,6 +47,7 @@ export const industries: Industry[] = [
   {
     slug: "education",
     name: "Education",
+    featured: true,
     summary: "Learning platforms and administrative systems built for real classrooms and institutions.",
     challenges: [
       "Disconnected systems for admissions, learning, and records",
@@ -107,6 +112,7 @@ export const industries: Industry[] = [
   {
     slug: "e-commerce",
     name: "E-commerce",
+    featured: true,
     summary: "High-performance storefronts and backend systems built to convert and scale.",
     challenges: [
       "Slow, poorly optimized storefronts losing customers",
@@ -123,6 +129,7 @@ export const industries: Industry[] = [
   {
     slug: "government",
     name: "Government",
+    featured: true,
     summary: "Digital public service platforms built for accessibility, security, and scale.",
     challenges: [
       "Legacy systems that are difficult to maintain or extend",
@@ -235,6 +242,7 @@ export const industries: Industry[] = [
   {
     slug: "startups",
     name: "Startups",
+    featured: true,
     summary: "Fast, lean product builds designed to help you validate and iterate quickly.",
     challenges: [
       "Limited runway to validate product-market fit",

@@ -1,3 +1,9 @@
+export interface TeamMemberSocial {
+  linkedin?: string;
+  x?: string;
+  facebook?: string;
+}
+
 export interface TeamMember {
   name: string;
   role: string;
@@ -5,6 +11,8 @@ export interface TeamMember {
   photo?: string;
   /** Featured with larger treatment at the top of the team section. */
   founder?: boolean;
+  /** Personal profile links, shown on hover. Omit any platform not provided. */
+  social?: TeamMemberSocial;
 }
 
 // TODO(client): swap `photo` for real headshots as soon as they're
@@ -12,17 +20,18 @@ export interface TeamMember {
 // people, sourced from a demo-avatar API), not actual photos of the team.
 export const team: TeamMember[] = [
   { name: "Muideen Akinroye", role: "Founder", founder: true, photo: "/ceo.jpg" },
-  { name: "Oluwatob Olanipekun", role: "Co-Founder", founder: true, photo: "/tobi.jpg" },
-  { name: "Akinroye Tofunmi", role: "Ambassador", photo: "/jesutofunmi.jpg" },
-  { name: "Mark Oladele", role: "Project Manager", photo: "/male.jpg" },
-  { name: "Samuel Abass", role: "Frontend Developer", photo: "/male.jpg" },
-  { name: "Adetundun Maryam", role: "Graphic Designer", photo: "/female.jpg" },
-  { name: "James Goslin", role: "Backend Developer", photo: "/male.jpg" },
-  { name: "Okunade Charles", role: "Data Analyst", photo: "/male.jpg" },
-  { name: "Azeezat Fawaz", role: "Frontend Developer", photo: "/male.jpg" },
-  { name: "Samson Ezekiel", role: "DevOps Engineer", photo: "/male.jpg" },
-  { name: "Muhammad Mojeed", role: "Data Tester", photo: "/male.jpg" },
-  { name: "Muyideen Olawumi", role: "Software Developer", photo: "/mui.jpg" },
-  { name: "Esther Olatunji", role: "SEO Expert", photo: "/female.jpg" },
-  { name: "Peter Tope", role: "Java Developer", photo: "/male.jpg" },
+  { name: "Oluwatobi Abosede", role: "Co-Founder", founder: true, photo: "/tobi.jpg" },
+  { name: "Muyideen Olawumi", role: "Co-Founder", founder: true, photo: "/mui.jpg" },
+  { name: "Eliana Tofunmi", role: "Ambassador", photo: "/jesutofunmi.jpg" },
+  { name: "Mark Oladele", role: "Project Manager", photo: "/malea.jpg" },
+  { name: "Sharafana Eich", role: "Mobile Developer", photo: "/malee.jpg" },
+  { name: "Bamigboye Rose", role: "Frontend Developer", photo: "/rose.jpg" },
+  { name: "James Goslin", role: "Backend Developer", photo: "/maleb.jpg" },
+  { name: "Okunade Charles", role: "AI/ML Engineer", photo: "/charles.jpg" },
+  { name: "Akinpelu Peter", role: "Data Analyst", photo: "/akin.jpg" },
+  { name: "Samson Ezekiel", role: "DevOps Engineer", photo: "/maled.jpg" },
+  { name: "Francisca Omotosho", role: "Incident Responder", photo: "/femaleb.jpg" },
+  { name: "Oyedeji Fatai", role: "Software Developer", photo: "/fatai.jpg" },
+  { name: "Semiu Oyetunji", role: "Penetration Tester", photo: "/semiu.jpg" },
+  { name: "Rahmon Mujeedat", role: "QA Officer", photo: "/femalea.jpg" },
 ];
